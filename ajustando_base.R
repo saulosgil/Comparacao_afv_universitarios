@@ -81,9 +81,8 @@ df_ajustado <-
   bind_cols(sf36) |># juntanto com as colunas do SF36
   mutate(
     area_conhecimento = case_when(area_conhecimento == 1 ~ "Saude",
-                                  area_conhecimento == 2 ~ "Exatas",
-                                  area_conhecimento == 3 ~ "Humanas",
-                                  area_conhecimento == 4 ~ "Tecnologia"),
+                                  area_conhecimento == 2 | area_conhecimento == 4 ~ "Exatas",
+                                  area_conhecimento == 3 ~ "Humanas"),
     raca = case_when(raca == 1 ~ "Preto",
                      raca == 2 ~ "Branco",
                      raca == 3 ~ "Amarelo",
