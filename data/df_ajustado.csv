@@ -1,0 +1,372 @@
+"";"idade";"sexo";"area_conhecimento";"curso";"semestre";"modalidade";"raca";"tratamento_atual";"tabagismo";"consumo_alcool";"teve_covid";"quando_teve_covid";"realiza_treinamento";"comportamento_sedentario";"mvpa";"ansiedade";"depressao";"capacidade_funcional";"aspecto_fisico";"dor";"estado_geral_saude";"vitalidade";"aspectos_sociais";"aspectos_emocionais";"saude_mental";"est_comparado_de_saude";"sf36_fisico";"sf36_mental"
+"1";36;1;"Tecnologia";"Análise e desenvolvimento de sistemas";2;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";8;215;0;0;100;100;100;100;100;100;100;100;3;100;100
+"2";35;2;"Exatas";"Pedagogia";12;2;"Branco";"Nenhum";"ex_tab";"nao";"sim";"7-9 meses";"sim";6;40;11;1;100;100;84;82;50;37,5;100;40;1;91,5;56,875
+"3";34;2;"Exatas";"Serviço Social";1;2;"Preto";"Depressão";"ex_tab";"nao";"sim";"7-9 meses";"nao";9;234;40;31;65;0;52;25;25;37,5;0;44;4;35,5;26,625
+"4";24;1;"Humanas";"Engenharia Elétrica";2;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";9;714;4;1;85;50;84;62;70;50;0;84;4;70,25;51
+"5";55;2;"Tecnologia";"Análise e desenvolvimento de sistemas";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";10;720;6;3;100;100;84;72;95;87,5;100;64;1;89;86,625
+"6";37;2;"Exatas";"Arquitetura e urbanismo";1;2;"Preto";"Nenhum";"nunca";"sim";"sim";"mais que 12 meses";"sim";8;295;0;0;100;100;100;72;85;87,5;100;84;1;93;89,125
+"7";37;2;"Exatas";"Arquitetura e urbanismo";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";17,5;100;25;28;70;25;52;15;35;62,5;33,3333333333333;40;3;40,5;42,7083333333333
+"8";18;2;"Tecnologia";"Gestão Financeira";1;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";15,5;490;3;0;100;75;84;72;70;75;100;68;3;82,75;78,25
+"9";32;1;"Humanas";"Engenharia da Computação";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";7,5;0;19;46;100;100;84;45;65;37,5;100;52;4;82,25;63,625
+"10";28;2;"Saude";"Medicina Veterinária";5;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9;0;22;15;75;50;62;77;25;62,5;0;24;4;66;27,875
+"11";36;2;"Exatas";"Pedagogia";11;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"nao";14;0;31;25;75;50;42;60;60;12,5;33,3333333333333;40;3;56,75;36,4583333333333
+"12";28;2;"Exatas";"História (Licenciatura)";5;1;"Branco";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";11,5;0;44;24;30;0;32;67;15;25;0;36;5;32,25;19
+"13";20;1;"Exatas";"História (Licenciatura)";1;2;"Branco";"Hipertensão";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";8;323;4;10;85;75;62;52;75;25;33,3333333333333;64;2;68,5;49,3333333333333
+"14";32;1;"Humanas";"Engenharia Elétrica";12;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";5;300;12;5;95;50;72;77;45;25;66,6666666666667;56;3;73,5;48,1666666666667
+"15";40;2;"Saude";"Fisioterapia";1;2;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";7;177;2;0;100;100;100;97;100;87,5;100;100;2;99,25;96,875
+"16";35;2;"Saude";"Psicologia";7;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";10,5;0;0;1;85;100;100;87;80;75;100;88;3;93;85,75
+"17";26;2;"Exatas";"Direito";6;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";11;0;20;24;100;100;62;25;25;37,5;33,3333333333333;24;4;71,75;29,9583333333333
+"18";22;2;"Tecnologia";"Gestão Comercial";8;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6;590;0;0;85;100;84;100;85;100;100;88;1;92,25;93,25
+"19";36;2;"Saude";"Nutrição";3;2;"Amarelo";"Diabetes";"ex_tab";"sim";"nao";"Não aplicável";"nao";5,5;0;6;7;85;50;84;40;40;50;33,3333333333333;76;4;64,75;49,8333333333333
+"20";23;2;"Exatas";"Psicologia";8;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";5,5;195;36;22;100;100;84;52;30;50;100;32;3;84;53
+"21";33;1;"Exatas";"Pedagogia (2ª graduação)";12;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4;420;11;14;75;75;42;62;60;50;100;60;3;63,5;67,5
+"22";45;2;"Saude";"Psicologia";10;1;"Preto";"Diabetes";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";11;117;21;20;35;75;42;42;25;25;66,6666666666667;20;3;48,5;34,1666666666667
+"23";25;2;"Saude";"Gestão Hospitalar";2;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";6,5;0;30;29;85;25;52;27;45;25;33,3333333333333;32;3;47,25;33,8333333333333
+"24";21;2;"Saude";"Fisioterapia";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";6;60;22;19;95;100;32;92;30;87,5;100;28;3;79,75;61,375
+"25";25;2;"Exatas";"Direito";1;1;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";8,5;0;30;20;85;25;62;47;60;25;66,6666666666667;44;4;54,75;48,9166666666667
+"26";19;2;"Saude";"Nutrição";1;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;323;0;0;100;100;100;85;90;100;100;96;1;96,25;96,5
+"27";58;2;"Saude";"Psicologia";6;1;"Preto";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"sim";10,5;158;6;7;75;100;62;67;70;50;66,6666666666667;64;2;76;62,6666666666667
+"28";53;2;"Saude";"Educação Física (Bacharelado)";11;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";8,5;150;3;5;100;100;84;77;45;75;66,6666666666667;64;3;90,25;62,6666666666667
+"29";23;2;"Saude";"Medicina Veterinária";9;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"sim";7;472;31;19;100;75;52;52;30;62,5;33,3333333333333;40;3;69,75;41,4583333333333
+"30";22;2;"Exatas";"Pedagogia";12;1;"Preto";"Diabetes";"ex_tab";"sim";"sim";"10-12 meses";"nao";8;40;12;28;20;0;42;5;20;12,5;0;24;4;16,75;14,125
+"31";40;2;"Saude";"Fisioterapia";5;1;"Branco";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"nao";10;413;31;14;40;25;62;85;40;87,5;66,6666666666667;52;4;53;61,5416666666667
+"32";20;2;"Exatas";"Direito";1;1;"Amarelo";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"sim";15,5;0;51;23;90;100;52;52;40;50;100;56;5;73,5;61,5
+"33";17;2;"Humanas";"Administração";12;2;"Amarelo";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";6;75;15;24;75;25;62;72;20;75;66,6666666666667;32;3;58,5;48,4166666666667
+"34";37;1;"Saude";"Enfermagem";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";10;30;5;5;90;100;84;37;70;75;100;72;4;77,75;79,25
+"35";18;1;"Humanas";"Engenharia de Produção";5;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";8;105;8;10;85;100;62;45;80;62,5;100;68;4;73;77,625
+"36";38;2;"Exatas";"Ciências Contábeis";11;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";6,5;0;13;26;60;50;62;67;35;50;33,3333333333333;32;4;59,75;37,5833333333333
+"37";27;1;"Exatas";"Direito";10;2;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;40;6;16;30;0;72;57;55;50;0;48;3;39,75;38,25
+"38";46;1;"Tecnologia";"Marketing";1;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";5;0;1;2;45;0;62;50;30;37,5;0;68;3;39,25;33,875
+"39";28;1;"Saude";"Fisioterapia";1;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";8;0;0;1;50;100;100;72;75;75;100;72;2;80,5;80,5
+"40";40;1;"Tecnologia";"Logística";1;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";12;60;32;41;80;25;52;72;15;25;33,3333333333333;20;5;57,25;23,3333333333333
+"41";21;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";7;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";7,5;0;30;29;100;50;62;67;25;25;66,6666666666667;12;3;69,75;32,1666666666667
+"42";30;2;"Exatas";"Psicologia";6;1;"Preto";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"nao";8;30;13;24;65;0;62;40;30;37,5;0;36;4;41,75;25,875
+"43";40;2;"Tecnologia";"Processos gerenciais";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"nao";8;0;6;12;10;0;84;45;55;50;0;56;2;34,75;40,25
+"44";38;2;"Saude";"Psicologia";3;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";6,5;0;3;2;100;75;72;77;35;87,5;66,6666666666667;76;3;81;66,2916666666667
+"45";51;2;"Exatas";"Geografia (Licenciatura)";5;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";11,5;0;5;10;70;100;84;92;65;75;100;68;3;86,5;77
+"46";25;2;"Saude";"Odontologia";3;1;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9;0;38;22;100;50;62;62;50;25;33,3333333333333;52;4;68,5;40,0833333333333
+"47";30;2;"Exatas";"Direito";7;1;"Preto";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"sim";10;120;57;35;85;0;22;35;30;12,5;0;32;2;35,5;18,625
+"48";20;1;"Humanas";"Engenharia Ambiental";3;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";5,5;600;1;1;100;100;100;92;85;75;66,6666666666667;76;1;98;75,6666666666667
+"49";37;2;"Exatas";"Pedagogia (2ª graduação)";6;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";13;595;21;17;95;50;62;27;50;50;66,6666666666667;52;3;58,5;54,6666666666667
+"50";30;2;"Exatas";"Pedagogia";6;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";3;0;32;18;100;0;64;77;50;50;0;64;4;60,25;41
+"51";39;1;"Saude";"Gestão Hospitalar";9;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";9;0;8;12;60;25;52;77;45;25;33,3333333333333;28;1;53,5;32,8333333333333
+"52";46;2;"Saude";"Odontologia";8;1;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";5;360;33;16;65;75;52;62;35;50;33,3333333333333;44;3;63,5;40,5833333333333
+"53";30;1;"Humanas";"Engenharia Civil";7;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";10;0;5;10;85;75;62;77;75;50;33,3333333333333;60;3;74,75;54,5833333333333
+"54";50;2;"Exatas";"Psicologia";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";5;0;0;5;100;75;62;72;50;87,5;66,6666666666667;56;1;77,25;65,0416666666667
+"55";22;1;"Humanas";"Engenharia Civil";6;2;"Indigena";"Hipertensão";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";7;180;0;6;65;25;100;57;70;87,5;66,6666666666667;84;3;61,75;77,0416666666667
+"56";39;2;"Exatas";"Letras (Licenciatura)";2;2;"Preto";"Hipertensão";"nunca";"sim";"nao";"Não aplicável";"nao";5;0;8;3;65;75;52;57;50;50;33,3333333333333;52;2;62,25;46,3333333333333
+"57";35;1;"Tecnologia";"Análise e desenvolvimento de sistemas";5;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";12;198;7;6;100;100;72;97;75;87,5;66,6666666666667;96;2;92,25;81,2916666666667
+"58";23;1;"Exatas";"Serviços jurídicos, cartoriais e notariais";3;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";9,5;240;2;0;100;100;84;62;80;87,5;100;76;3;86,5;85,875
+"59";50;2;"Saude";"Psicologia";5;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9;0;17;16;55;75;62;57;25;50;33,3333333333333;16;4;62,25;31,0833333333333
+"60";50;2;"Humanas";"Engenharia de Produção";9;2;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";5;75;3;3;90;25;40;100;45;100;0;80;1;63,75;56,25
+"61";51;1;"Humanas";"Engenharia Elétrica";10;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";8;600;11;10;10;25;100;77;35;75;0;80;1;53;47,5
+"62";31;1;"Humanas";"Engenharia Elétrica";7;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"nao";7;0;1;0;90;100;72;62;75;75;100;76;1;81;81,5
+"63";31;2;"Saude";"Farmácia";3;1;"Branco";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"sim";17,5;0;38;42;75;25;62;82;25;25;33,3333333333333;28;3;61;27,8333333333333
+"64";19;2;"Exatas";"Administração";7;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"nao";12,5;300;23;15;70;0;72;30;30;12,5;0;40;4;43;20,625
+"65";25;2;"Saude";"Psicologia";5;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";15,5;0;45;21;35;100;20;62;45;75;100;28;3;54,25;62
+"66";26;2;"Saude";"Medicina";5;1;"Indigena";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";14,5;120;16;9;85;50;62;77;45;75;66,6666666666667;52;3;68,5;59,6666666666667
+"67";20;2;"Saude";"Odontologia";7;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";9;0;18;9;95;0;12;87;65;75;66,6666666666667;68;3;48,5;68,6666666666667
+"68";31;2;"Exatas";"Pedagogia";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"nao";6,5;0;11;16;65;0;100;77;60;62,5;33,3333333333333;48;4;60,5;50,9583333333333
+"69";29;2;"Tecnologia";"Gestão de Recursos Humanos";1;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";9;0;27;17;40;25;42;40;35;37,5;33,3333333333333;36;4;36,75;35,4583333333333
+"70";38;1;"Tecnologia";"Análise e desenvolvimento de sistemas";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";11,5;148;6;7;90;100;84;57;65;75;33,3333333333333;68;2;82,75;60,3333333333333
+"71";23;2;"Exatas";"Psicologia";9;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4,5;240;16;17;80;50;62;72;45;50;0;48;2;66;35,75
+"72";42;2;"Tecnologia";"Gestão da Tecnologia da Informação";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";5;0;12;15;65;0;22;62;55;50;33,3333333333333;48;3;37,25;46,5833333333333
+"73";36;2;"Exatas";"Pedagogia (2ª graduação)";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";5,5;402;3;7;90;50;84;97;55;62,5;0;72;3;80,25;47,375
+"74";44;2;"Exatas";"Educação Física (Bacharelado)";7;1;"Indigena";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";8;720;17;18;100;0;42;42;35;25;0;36;2;46;24
+"75";29;2;"Exatas";"Pedagogia";2;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";6;0;6;7;40;100;72;52;35;75;100;44;2;66;63,5
+"76";30;1;"Saude";"Educação Física (Bacharelado)";4;2;"Preto";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"nao";4;147;28;19;90;100;52;55;50;37,5;100;56;4;74,25;60,875
+"77";52;2;"Exatas";"Direito";10;1;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";4,5;0;20;25;40;0;52;20;35;37,5;0;36;4;28;27,125
+"78";22;2;"Saude";"Nutrição";3;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";7;300;12;25;100;0;62;92;15;87,5;0;32;3;63,5;33,625
+"79";49;2;"Saude";"Educação Física (Licenciatura)";9;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;540;1;1;100;100;84;87;85;62,5;100;88;1;92,75;83,875
+"80";31;2;"Exatas";"Letras (Licenciatura)";2;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";11,5;15;6;18;80;75;100;45;55;12,5;66,6666666666667;24;3;75;39,5416666666667
+"81";18;1;"Tecnologia";"Logística";1;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";13,5;180;9;14;60;50;74;62;60;62,5;33,3333333333333;60;3;61,5;53,9583333333333
+"82";28;2;"Saude";"Psicologia";10;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";7;0;6;20;75;0;52;40;10;37,5;0;36;4;41,75;20,875
+"83";29;2;"Exatas";"Ciências Contábeis";9;2;"Pardo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";8;546;7;1;85;100;84;87;80;75;100;100;3;89;88,75
+"84";55;2;"Tecnologia";"Análise e desenvolvimento de sistemas";1;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";8;116;12;28;55;25;62;32;5;25;0;8;4;43,5;9,5
+"85";27;2;"Saude";"Medicina";7;1;"Amarelo";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"sim";9,5;195;6;18;85;0;100;72;45;62,5;0;52;2;64,25;39,875
+"86";26;2;"Saude";"Medicina Veterinária";9;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"sim";5;0;34;13;100;0;84;97;45;37,5;66,6666666666667;36;3;70,25;46,2916666666667
+"87";37;2;"Tecnologia";"Gestão Financeira";1;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";7,5;75;40;23;55;50;72;62;55;50;66,6666666666667;48;3;59,75;54,9166666666667
+"88";28;1;"Tecnologia";"Análise e desenvolvimento de sistemas";3;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8;0;0;10;55;100;72;57;65;87,5;100;60;1;71;78,125
+"89";20;2;"Saude";"Psicologia";4;1;"Preto";"Depressão";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";15;0;62;47;25;25;22;25;10;12,5;0;0;4;24,25;5,625
+"90";37;2;"Saude";"Medicina Veterinária";5;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";14;120;13;7;35;25;42;67;45;62,5;0;60;4;42,25;41,875
+"91";20;2;"Saude";"Medicina";1;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8;88;36;19;90;100;72;37;25;75;66,6666666666667;36;1;74,75;50,6666666666667
+"92";18;1;"Tecnologia";"Gestão Financeira";5;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";20;87;35;34;80;0;62;20;25;12,5;0;20;4;40,5;14,375
+"93";33;2;"Exatas";"Pedagogia";3;2;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";4,5;235;11;25;25;0;62;40;50;62,5;0;40;4;31,75;38,125
+"94";46;2;"Exatas";"Pedagogia";6;1;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";7,5;39;21;20;60;0;52;47;35;25;33,3333333333333;20;4;39,75;28,3333333333333
+"95";23;2;"Tecnologia";"Estética e Cosmética";2;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";11;0;32;19;45;25;62;45;25;37,5;0;36;3;44,25;24,625
+"96";20;2;"Saude";"Medicina";5;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";9,5;240;9;16;100;25;100;87;40;62,5;33,3333333333333;52;2;78;46,9583333333333
+"97";23;2;"Saude";"Fisioterapia";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";8;245;4;1;65;75;72;87;60;87,5;66,6666666666667;92;1;74,75;76,5416666666667
+"98";34;2;"Saude";"Enfermagem";1;1;"Branco";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"nao";12,5;0;42;30;50;50;22;12;10;25;0;24;4;33,5;14,75
+"99";21;2;"Saude";"Psicologia";9;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";13,5;156;19;18;65;50;52;57;25;25;0;28;2;56;19,5
+"100";24;2;"Saude";"Farmácia";2;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";5,5;0;29;23;50;25;52;57;30;50;0;28;4;46;27
+"101";32;2;"Exatas";"Pedagogia (2ª graduação)";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";7;135;5;6;45;50;62;67;50;62,5;0;60;1;56;43,125
+"102";49;1;"Exatas";"Direito";2;1;"Branco";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";16;0;0;17;80;100;62;72;40;25;100;52;3;78,5;54,25
+"103";22;1;"Humanas";"Engenharia Mecânica";5;2;"Branco";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";7,5;360;2;13;100;100;100;87;75;75;66,6666666666667;68;2;96,75;71,1666666666667
+"104";36;2;"Saude";"Estética e Cosmética";3;1;"Amarelo";"Nenhum";"nunca";"nao";"sim";"10-12 meses";"nao";20;0;48;49;25;0;22;20;35;12,5;0;28;5;16,75;18,875
+"105";24;2;"Saude";"Enfermagem";7;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";10;0;59;33;50;75;62;12;25;25;66,6666666666667;32;4;49,75;37,1666666666667
+"106";23;1;"Humanas";"Engenharia Química";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";3,5;416;5;1;95;100;100;92;85;87,5;100;92;2;96,75;91,125
+"107";66;2;"Exatas";"Ciências Contábeis";3;2;"Preto";"Nenhum";"nunca";"sim";"sim";"mais que 12 meses";"nao";20;0;38;31;45;0;52;27;20;50;0;8;3;31;19,5
+"108";30;2;"Exatas";"Gestão Financeira";1;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";6;116;6;2;75;75;84;82;65;75;100;56;3;79;74
+"109";38;2;"Saude";"Medicina";7;1;"Preto";"Depressão";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";12;0;29;24;30;25;62;15;30;12,5;0;32;3;33;18,625
+"110";23;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Asma brônquica";"nunca";"sim";"nao";"Não aplicável";"nao";6;0;11;10;30;100;72;57;65;75;100;76;1;64,75;79
+"111";21;2;"Exatas";"Pedagogia";5;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";9;0;14;30;50;50;42;37;20;25;66,6666666666667;24;3;44,75;33,9166666666667
+"112";30;1;"Saude";"Medicina";3;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";13;0;13;26;100;100;62;35;20;37,5;33,3333333333333;40;5;74,25;32,7083333333333
+"113";20;2;"Exatas";"Pedagogia";3;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";5,5;375;3;4;100;100;72;92;85;87,5;100;84;1;91;89,125
+"114";35;1;"Saude";"Educação Física (Bacharelado)";8;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";12;382;2;19;75;50;84;55;50;37,5;66,6666666666667;20;5;66;43,5416666666667
+"115";27;2;"Saude";"Medicina Veterinária";7;1;"Preto";"Asma brônquica";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";10;0;33;23;55;0;52;25;25;37,5;0;20;4;33;20,625
+"116";22;2;"Exatas";"Psicologia";1;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";14;0;24;30;70;50;62;37;45;50;66,6666666666667;56;3;54,75;54,4166666666667
+"117";22;2;"Saude";"Medicina";1;1;"Preto";"Asma brônquica";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";8;353;12;11;95;75;72;90;50;100;66,6666666666667;44;3;83;65,1666666666667
+"118";33;2;"Saude";"Psicologia";2;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";19;60;30;25;100;75;84;67;45;87,5;33,3333333333333;48;3;81,5;53,4583333333333
+"119";19;1;"Humanas";"Engenharia Civil";7;2;"Amarelo";"Diabetes";"ex_tab";"sim";"sim";"10-12 meses";"sim";5;140;8;9;85;75;62;77;80;75;100;100;4;74,75;88,75
+"120";52;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";10,5;25;34;31;55;100;72;52;35;25;100;40;3;69,75;50
+"121";19;1;"Humanas";"Engenharia Ambiental";8;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";4,5;413;3;14;95;100;84;77;70;50;100;68;2;89;72
+"122";48;2;"Exatas";"Pedagogia";6;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";4;420;20;22;65;0;10;37;35;25;0;32;4;28;23
+"123";32;1;"Exatas";"Serviço Social";4;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";5;0;39;25;80;0;52;47;25;25;0;24;4;44,75;18,5
+"124";28;2;"Humanas";"Ciências Contábeis";7;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"nao";7;0;9;14;45;0;62;67;50;62,5;33,3333333333333;56;3;43,5;50,4583333333333
+"125";37;1;"Exatas";"Pedagogia";12;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";1,5;840;28;20;100;0;62;42;25;50;0;32;3;51;26,75
+"126";28;1;"Humanas";"Engenharia Elétrica";9;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";11,5;60;0;0;100;100;100;100;100;100;100;100;1;100;100
+"127";53;2;"Tecnologia";"Gastronomia";2;1;"Branco";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"nao";4;0;6;6;70;100;100;52;90;62,5;100;96;3;80,5;87,125
+"128";37;2;"Exatas";"Engenharia Civil";8;2;"Preto";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"sim";13,5;295;14;12;100;25;52;47;50;50;66,6666666666667;60;4;56;56,6666666666667
+"129";40;2;"Exatas";"Gestão de Recursos Humanos";4;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;538;61;44;60;25;22;15;30;37,5;0;24;5;30,5;22,875
+"130";20;2;"Exatas";"Pedagogia";12;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";3,5;252;9;14;95;100;74;50;85;50;66,6666666666667;44;3;79,75;61,4166666666667
+"131";22;2;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";12;2;"Preto";"Depressão";"nunca";"sim";"sim";"mais que 12 meses";"nao";5;0;22;35;15;25;0;0;5;0;0;28;5;10;8,25
+"132";42;2;"Exatas";"Pedagogia";1;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"7-9 meses";"nao";9;480;53;45;65;0;10;5;20;37,5;0;16;3;20;18,375
+"133";33;2;"Exatas";"Pedagogia";12;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";6;60;9;24;65;25;52;42;30;25;33,3333333333333;40;3;46;32,0833333333333
+"134";40;2;"Exatas";"Ciências Contábeis";7;1;"Branco";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";12,5;0;36;39;75;25;52;22;5;25;0;20;3;43,5;12,5
+"135";21;1;"Tecnologia";"Logística";12;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";6;177;15;9;35;50;22;40;30;50;66,6666666666667;52;4;36,75;49,6666666666667
+"136";43;1;"Tecnologia";"Engenharia de Produção";9;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";6;0;20;15;30;0;62;52;60;75;66,6666666666667;48;4;36;62,4166666666667
+"137";41;2;"Exatas";"Pedagogia";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;0;3;4;60;75;72;82;60;62,5;33,3333333333333;60;4;72,25;53,9583333333333
+"138";26;2;"Saude";"Medicina";3;1;"Preto";"Depressão";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";6,5;0;22;32;90;100;72;82;25;62,5;33,3333333333333;24;2;86;36,2083333333333
+"139";21;2;"Exatas";"Letras (Licenciatura)";7;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";11,5;780;5;6;100;100;52;77;65;62,5;100;76;3;82,25;75,875
+"140";51;2;"Saude";"Educação Física (Licenciatura)";6;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";3,5;0;9;15;80;100;62;57;35;25;33,3333333333333;56;3;74,75;37,3333333333333
+"141";42;2;"Saude";"Medicina";1;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";7,5;0;8;1;70;100;84;52;50;75;66,6666666666667;76;2;76,5;66,9166666666667
+"142";20;2;"Exatas";"Letras (Licenciatura)";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";6;80;28;24;10;0;62;40;50;12,5;33,3333333333333;44;3;28;34,9583333333333
+"143";50;2;"Saude";"Educação Física (Bacharelado)";3;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";5,5;29;35;30;85;0;12;35;35;50;33,3333333333333;28;5;33;36,5833333333333
+"144";19;2;"Humanas";"Marketing";8;2;"Amarelo";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"nao";6,5;0;51;11;35;50;52;35;40;50;33,3333333333333;40;4;43;40,8333333333333
+"145";42;2;"Humanas";"Ciências Contábeis";7;1;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";13;214;43;25;95;0;52;52;25;50;0;20;3;49,75;23,75
+"146";37;2;"Saude";"Medicina Veterinária";5;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";8,5;0;30;15;70;100;72;30;50;50;100;56;3;68;64
+"147";19;1;"Saude";"Farmácia";1;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"nao";5;0;4;4;60;100;72;67;75;50;100;72;3;74,75;74,25
+"148";37;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";1;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";10,5;15;7;7;85;50;62;87;55;62,5;66,6666666666667;60;3;71;61,0416666666667
+"149";33;2;"Saude";"Odontologia";6;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4;300;33;8;100;25;74;67;55;62,5;33,3333333333333;48;4;66,5;49,7083333333333
+"150";27;2;"Exatas";"Serviço Social";1;2;"Amarelo";"Diabetes";"ex_tab";"sim";"sim";"10-12 meses";"sim";10;240;40;26;60;0;22;22;40;25;0;40;4;26;26,25
+"151";40;1;"Tecnologia";"Engenharia Civil";3;2;"Preto";"Nenhum";"nunca";"sim";"sim";"0 a 3 meses";"nao";6;0;4;7;95;100;52;62;55;62,5;66,6666666666667;44;3;77,25;57,0416666666667
+"152";46;2;"Saude";"Psicologia";6;1;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";7;236;27;15;45;75;52;25;15;12,5;66,6666666666667;52;4;49,25;36,5416666666667
+"153";0;2;"Saude";"Farmácia";3;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"nao";13,5;25;22;23;70;100;62;67;25;62,5;33,3333333333333;24;2;74,75;36,2083333333333
+"154";31;1;"Saude";"Medicina";6;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";10;180;4;15;100;0;72;92;30;25;0;48;4;66;25,75
+"155";21;1;"Saude";"Educação Física (Bacharelado)";9;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6;350;0;0;95;100;100;80;85;100;100;92;1;93,75;94,25
+"156";45;1;"Humanas";"Engenharia Civil";4;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";12;180;8;5;95;75;62;72;50;50;66,6666666666667;56;3;76;55,6666666666667
+"157";36;2;"Saude";"Medicina Veterinária";7;1;"Preto";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"nao";9,5;0;30;22;75;0;52;15;15;12,5;0;52;4;35,5;19,875
+"158";22;1;"Exatas";"Letras (Licenciatura)";12;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"0 a 3 meses";"nao";5;0;13;1;85;100;84;77;90;75;100;92;1;86,5;89,25
+"159";38;2;"Saude";"Fisioterapia";8;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"nao";6,5;0;38;25;70;50;62;30;10;12,5;0;36;4;53;14,625
+"160";22;2;"Tecnologia";"Análise e desenvolvimento de sistemas";4;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";8;258;18;22;70;100;84;62;50;62,5;33,3333333333333;36;2;79;45,4583333333333
+"161";25;2;"Saude";"Educação Física (Bacharelado)";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;240;33;13;80;0;42;52;10;25;0;68;3;43,5;25,75
+"162";37;2;"Saude";"Biomendicina";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";10,5;412;7;14;75;100;84;22;45;75;33,3333333333333;60;1;70,25;53,3333333333333
+"163";20;2;"Exatas";"Direito";7;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";9;120;3;0;100;100;100;67;80;87,5;100;76;2;91,75;85,875
+"164";28;1;"Humanas";"Engenharia de Produção";6;2;"Amarelo";"Asma brônquica";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;60;10;5;70;75;62;57;70;75;66,6666666666667;76;3;66;71,9166666666667
+"165";40;2;"Saude";"Odontologia";2;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";5;0;1;2;100;100;100;62;75;62,5;100;72;3;90,5;77,375
+"166";39;2;"Exatas";"Ciências Contábeis";1;2;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";7;0;31;20;65;0;22;20;20;37,5;0;20;4;26,75;19,375
+"167";38;2;"Saude";"Medicina";6;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";16;264;15;18;100;100;72;97;50;75;33,3333333333333;56;3;92,25;53,5833333333333
+"168";22;2;"Saude";"Medicina";5;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";14;100;35;18;60;0;22;10;35;12,5;0;32;4;23;19,875
+"169";19;2;"Tecnologia";"Logística";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";13;120;15;16;95;0;62;62;25;75;0;32;3;54,75;33
+"170";39;2;"Exatas";"Teologia (Bacharelado)";5;2;"Indigena";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"nao";4;0;21;25;30;25;52;65;15;37,5;33,3333333333333;16;4;43;25,4583333333333
+"171";48;2;"Exatas";"Comunicação Social - Publicidade e Propaganda";7;1;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";11;0;29;27;65;100;62;37;30;50;33,3333333333333;28;3;66;35,3333333333333
+"172";23;1;"Exatas";"Direito";7;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";4;0;15;5;95;25;100;77;60;50;33,3333333333333;72;4;74,25;53,8333333333333
+"173";37;2;"Exatas";"Pedagogia";12;2;"Amarelo";"Hipertensão";"ex_tab";"nao";"nao";"mais que 12 meses";"nao";6;79;14;40;25;0;22;35;60;12,5;0;32;4;20,5;26,125
+"174";53;2;"Exatas";"Administração";7;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";4,5;105;5;3;70;100;72;47;60;62,5;100;56;3;72,25;69,625
+"175";23;2;"Humanas";"Processos gerenciais";1;2;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"4-6 meses";"nao";7;75;20;15;90;75;72;57;35;62,5;33,3333333333333;56;4;73,5;46,7083333333333
+"176";39;2;"Exatas";"Serviço Social";12;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";6;105;5;2;100;100;100;67;60;87,5;100;60;1;91,75;76,875
+"177";33;2;"Exatas";"Letras (Licenciatura)";9;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";11;355;0;0;95;100;84;95;85;100;100;92;3;93,5;94,25
+"178";49;2;"Exatas";"Pedagogia";12;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";3;0;25;11;100;100;84;72;70;62,5;100;60;3;89;73,125
+"179";33;2;"Saude";"Enfermagem";1;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";8;600;0;0;100;100;72;67;75;87,5;100;68;1;84,75;82,625
+"180";32;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";7;1;"Preto";"Nenhum";"nunca";"nao";"sim";"0 a 3 meses";"nao";7;75;22;45;70;50;62;50;65;12,5;33,3333333333333;68;3;58;44,7083333333333
+"181";34;1;"Humanas";"Engenharia Química";1;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";6;120;8;10;95;100;62;67;40;75;33,3333333333333;36;1;81;46,0833333333333
+"182";31;2;"Exatas";"Pedagogia";6;1;"Preto";"Depressão";"ex_tab";"sim";"sim";"10-12 meses";"sim";18;420;41;25;50;0;52;72;15;25;0;40;4;43,5;20
+"183";35;2;"Exatas";"Arquitetura e urbanismo";1;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";8;360;0;4;85;100;100;77;70;87,5;100;48;3;90,5;76,375
+"184";18;1;"Tecnologia";"Gestão da Tecnologia da Informação";4;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"nao";4,5;90;8;11;85;75;62;82;80;50;66,6666666666667;64;1;76;65,1666666666667
+"185";52;2;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";5;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"sim";8,5;600;0;11;100;75;62;57;50;62,5;66,6666666666667;48;3;73,5;56,7916666666667
+"186";26;2;"Exatas";"Ciências Contábeis";12;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";6,5;245;6;5;50;0;52;62;35;50;0;64;3;41;37,25
+"187";40;2;"Saude";"Fisioterapia";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";15;420;55;21;90;0;42;62;25;25;0;44;4;48,5;23,5
+"188";25;2;"Exatas";"Pedagogia";1;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";10;60;28;21;95;50;62;77;15;75;0;32;2;71;30,5
+"189";26;2;"Saude";"Biomendicina";1;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";11;80;14;8;85;50;62;82;55;75;33,3333333333333;60;2;69,75;55,8333333333333
+"190";21;1;"Saude";"Educação Física (Bacharelado)";2;2;"Indigena";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";5,5;189;18;15;20;0;62;57;50;62,5;0;44;4;34,75;39,125
+"191";25;2;"Exatas";"Ciências Contábeis";6;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";8;60;13;11;80;100;62;87;60;62,5;66,6666666666667;68;4;82,25;64,2916666666667
+"192";34;2;"Humanas";"Administração";5;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";7,5;140;16;15;75;0;52;57;25;50;0;24;4;46;24,75
+"193";21;1;"Saude";"Farmácia";7;1;"Amarelo";"Hiperlipidemia";"ex_tab";"nao";"sim";"10-12 meses";"sim";4;180;55;43;80;25;74;45;65;12,5;33,3333333333333;64;3;56;43,7083333333333
+"194";37;1;"Tecnologia";"Segurança da Informação";9;2;"Branco";"Diabetes";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;120;16;11;85;50;72;57;40;50;100;44;4;66;58,5
+"195";37;2;"Saude";"Enfermagem";1;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";17,5;30;16;22;70;50;22;72;20;62,5;0;24;4;53,5;26,625
+"196";19;2;"Saude";"Enfermagem";5;1;"Amarelo";"Depressão";"nunca";"nao";"sim";"0 a 3 meses";"nao";14;0;34;25;30;25;62;5;50;25;0;28;5;30,5;25,75
+"197";26;2;"Saude";"Odontologia";5;1;"Preto";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"nao";15;0;29;31;30;75;52;15;15;37,5;33,3333333333333;28;3;43;28,4583333333333
+"198";22;1;"Saude";"Medicina";1;1;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";13;0;21;18;65;50;84;57;15;50;0;40;3;64;26,25
+"199";19;2;"Saude";"Biomendicina";3;1;"Branco";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"nao";1,5;117;7;23;75;50;52;57;30;75;33,3333333333333;40;3;58,5;44,5833333333333
+"200";54;2;"Saude";"Fisioterapia";3;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";12;533;22;4;80;100;72;77;75;75;100;72;2;82,25;80,5
+"201";23;2;"Saude";"Enfermagem";5;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";10,5;0;8;10;95;100;52;87;35;50;100;52;4;83,5;59,25
+"202";19;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Depressão";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";12;296;0;3;100;100;84;92;80;87,5;100;84;1;94;87,875
+"203";34;2;"Saude";"Biomendicina";3;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";5;420;5;9;70;75;84;77;65;75;66,6666666666667;64;4;76,5;67,6666666666667
+"204";20;2;"Humanas";"Design de Interiores";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";16;50;15;17;55;0;52;35;25;37,5;33,3333333333333;40;3;35,5;33,9583333333333
+"205";21;2;"Saude";"Farmácia";2;2;"Preto";"Depressão";"ex_tab";"sim";"sim";"7-9 meses";"nao";13;0;55;31;15;0;0;20;20;37,5;0;16;5;8,75;18,375
+"206";43;2;"Saude";"Medicina";3;1;"Preto";"Depressão";"nunca";"nao";"sim";"0 a 3 meses";"sim";13,5;0;42;31;45;0;0;15;5;12,5;0;8;5;15;6,375
+"207";18;1;"Exatas";"Pedagogia (2ª graduação)";12;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4,5;132;2;0;100;75;100;57;75;75;66,6666666666667;68;3;83;71,1666666666667
+"208";0;1;"Humanas";"Ciências Contábeis";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";6;45;21;10;95;50;100;82;50;25;100;52;2;81,75;56,75
+"209";30;2;"Exatas";"Pedagogia";6;2;"Branco";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";5;418;20;9;40;100;100;67;30;75;100;28;3;76,75;58,25
+"210";36;2;"Saude";"Psicologia";7;1;"Branco";"Asma brônquica";"ex_tab";"sim";"nao";"Não aplicável";"nao";8;480;33;14;80;100;62;82;60;75;66,6666666666667;60;2;81;65,4166666666667
+"211";29;2;"Exatas";"Pedagogia";1;1;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";11,5;0;43;29;90;100;62;20;20;12,5;33,3333333333333;24;5;68;22,4583333333333
+"212";18;2;"Saude";"Medicina";6;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";7,5;0;21;19;85;50;52;47;30;75;33,3333333333333;48;4;58,5;46,5833333333333
+"213";22;2;"Exatas";"Psicologia";1;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"nao";16;0;20;36;80;0;22;10;5;12,5;0;12;4;28;7,375
+"214";23;2;"Exatas";"História (Licenciatura)";1;2;"Amarelo";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";1,5;90;21;33;75;25;52;57;15;25;0;28;2;52,25;17
+"215";20;2;"Exatas";"Serviço Social";12;2;"Amarelo";"Hipertensão";"ex_tab";"nao";"nao";"Não aplicável";"sim";3;147;13;13;50;100;52;82;65;62,5;100;84;4;71;77,875
+"216";62;2;"Saude";"Medicina Veterinária";9;1;"Preto";"Depressão";"ex_tab";"nao";"nao";"Não aplicável";"sim";13;318;30;32;80;0;52;32;25;50;0;40;5;41;28,75
+"217";23;2;"Exatas";"Ciências Contábeis";8;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"nao";11,5;0;14;18;95;50;72;42;30;62,5;66,6666666666667;40;4;64,75;49,7916666666667
+"218";24;2;"Humanas";"Gestão Financeira";12;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"7-9 meses";"sim";12;120;3;2;100;100;84;97;70;87,5;100;72;2;95,25;82,375
+"219";26;2;"Saude";"Nutrição";3;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";14;175;19;10;60;0;62;40;35;12,5;33,3333333333333;56;4;40,5;34,2083333333333
+"220";18;2;"Saude";"Farmácia";3;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"nao";12;0;19;12;65;75;62;32;50;25;33,3333333333333;48;4;58,5;39,0833333333333
+"221";38;2;"Humanas";"Administração";9;1;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"10-12 meses";"sim";20;177;12;37;20;0;12;25;40;0;0;32;2;14,25;18
+"222";43;2;"Saude";"Medicina Veterinária";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";7,5;0;30;41;65;100;52;17;40;25;100;44;3;58,5;52,25
+"223";20;2;"Tecnologia";"Estética e Cosmética";1;2;"Amarelo";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";12;30;33;37;30;0;12;30;15;37,5;0;28;5;18;20,125
+"224";33;2;"Saude";"Fisioterapia";5;1;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";6;0;11;1;95;100;84;97;85;87,5;33,3333333333333;92;2;94;74,4583333333333
+"225";48;1;"Humanas";"Engenharia Ambiental";10;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";14;300;19;5;30;75;20;92;55;75;66,6666666666667;96;4;54,25;73,1666666666667
+"226";52;2;"Saude";"Farmácia";7;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"nao";11;0;44;26;90;25;62;22;15;50;0;12;5;49,75;19,25
+"227";21;2;"Tecnologia";"Marketing Digital";1;2;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";4,5;0;28;40;45;0;62;40;25;12,5;0;20;5;36,75;14,375
+"228";28;1;"Humanas";"Engenharia Mecânica";6;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";9,5;120;2;4;95;100;84;92;90;87,5;100;88;1;92,75;91,375
+"229";31;2;"Tecnologia";"Gestão de Recursos Humanos";1;2;"Amarelo";"Asma brônquica";"ex_tab";"sim";"nao";"Não aplicável";"nao";11;78;18;17;35;25;42;30;5;12,5;0;20;3;33;9,375
+"230";46;1;"Saude";"Farmácia";8;1;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9,5;0;32;10;90;0;100;47;55;62,5;0;68;4;59,25;46,375
+"231";23;1;"Humanas";"Engenharia Elétrica";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";12;120;5;5;95;100;84;87;90;75;100;88;3;91,5;88,25
+"232";33;2;"Humanas";"Engenharia Ambiental";8;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"nao";8,5;40;4;2;100;100;100;87;75;75;100;84;3;96,75;83,5
+"233";33;2;"Exatas";"Ciências Contábeis";3;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";12;117;14;8;90;25;72;67;75;75;33,3333333333333;60;3;63,5;60,8333333333333
+"234";24;1;"Saude";"Educação Física (Bacharelado)";5;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";3;714;1;0;100;100;100;100;100;100;100;96;1;100;99
+"235";36;1;"Exatas";"Letras (Licenciatura)";4;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";6;480;13;21;100;50;62;77;65;37,5;33,3333333333333;44;2;72,25;44,9583333333333
+"236";39;2;"Saude";"Farmácia";7;1;"Amarelo";"Depressão";"nunca";"nao";"nao";"Não aplicável";"sim";12;125;8;20;75;25;62;47;45;62,5;0;40;2;52,25;36,875
+"237";29;1;"Humanas";"Engenharia Civil";3;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";9,5;546;9;7;75;100;62;77;70;62,5;100;88;2;78,5;80,125
+"238";41;2;"Saude";"Educação Física (Bacharelado)";3;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"nao";10;0;27;31;45;75;42;52;25;25;33,3333333333333;16;3;53,5;24,8333333333333
+"239";46;2;"Tecnologia";"Gestão da Qualidade";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;480;5;16;75;50;62;62;65;50;66,6666666666667;60;3;62,25;60,4166666666667
+"240";41;1;"Humanas";"Engenharia Química";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";12;30;12;23;65;100;84;57;25;50;66,6666666666667;44;2;76,5;46,4166666666667
+"241";20;2;"Saude";"Medicina Veterinária";7;1;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";10;210;20;17;15;100;100;72;40;75;33,3333333333333;44;3;71,75;48,0833333333333
+"242";22;2;"Exatas";"Direito";9;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";10,5;240;22;17;80;25;62;87;15;62,5;33,3333333333333;20;1;63,5;32,7083333333333
+"243";35;2;"Exatas";"Pedagogia";12;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"sim";6,5;39;16;7;60;0;52;47;45;25;0;44;4;39,75;28,5
+"244";41;1;"Humanas";"Arquitetura e urbanismo";4;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";12;0;9;18;100;100;72;62;75;75;100;52;3;83,5;75,5
+"245";32;1;"Humanas";"Engenharia Química";5;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";4;20;5;4;95;100;100;87;80;62,5;100;80;3;95,5;80,625
+"246";28;1;"Saude";"Medicina";3;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";5,5;0;4;0;95;100;100;92;70;75;100;72;4;96,75;79,25
+"247";41;2;"Exatas";"Educação Física (Bacharelado)";1;2;"Indigena";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";11;234;27;28;50;0;22;57;30;50;0;32;3;32,25;28
+"248";31;2;"Saude";"Biomendicina";1;2;"Amarelo";"Hipertensão";"ex_tab";"sim";"sim";"10-12 meses";"sim";8;0;15;8;85;75;72;72;55;75;66,6666666666667;64;4;76;65,1666666666667
+"249";28;2;"Exatas";"Educação Física (Licenciatura)";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";3;100;8;21;50;25;62;47;40;62,5;0;40;2;46;35,625
+"250";35;2;"Saude";"Farmácia";5;1;"Indigena";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8;58;6;6;85;75;84;62;55;87,5;100;60;2;76,5;75,625
+"251";19;2;"Exatas";"Arquitetura e urbanismo";5;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";9;40;20;26;65;0;74;25;20;25;0;48;3;41;23,25
+"252";22;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";5;2;"Preto";"Nenhum";"nunca";"sim";"nao";"Não aplicável";"nao";11;0;29;33;55;0;100;92;15;37,5;0;4;2;61,75;14,125
+"253";53;2;"Saude";"Medicina Veterinária";7;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";13,5;60;30;15;70;50;72;20;35;50;33,3333333333333;32;4;53;37,5833333333333
+"254";23;2;"Exatas";"Gestão de Recursos Humanos";1;1;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9,5;0;27;26;95;0;62;27;15;75;33,3333333333333;36;3;46;39,8333333333333
+"255";19;2;"Saude";"Biomendicina";7;1;"Amarelo";"Hipertensão";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";12;0;18;17;60;75;52;62;55;62,5;66,6666666666667;48;4;62,25;58,0416666666667
+"256";34;1;"Tecnologia";"Processos gerenciais";4;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";1,5;0;17;17;15;0;22;40;45;37,5;0;40;2;19,25;30,625
+"257";52;2;"Tecnologia";"Gastronomia";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4;140;0;0;95;100;100;70;55;100;100;40;1;91,25;73,75
+"258";39;2;"Saude";"Nutrição";1;2;"Preto";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";4;360;1;1;100;100;84;87;85;87,5;100;92;1;92,75;91,125
+"259";55;2;"Saude";"Medicina Veterinária";7;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";14,5;588;33;15;85;100;52;37;25;50;33,3333333333333;48;3;68,5;39,0833333333333
+"260";21;2;"Tecnologia";"Estética e Cosmética";11;2;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";1,5;840;37;50;0;0;12;40;30;12,5;0;32;1;13;18,625
+"261";45;1;"Tecnologia";"Engenharia de Produção";12;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";9,5;0;10;17;100;0;62;67;50;50;33,3333333333333;40;3;57,25;43,3333333333333
+"262";34;2;"Exatas";"Gestão da Qualidade";1;2;"Branco";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";15,5;240;30;34;30;0;32;10;35;12,5;0;32;4;18;19,875
+"263";34;2;"Exatas";"Direito";1;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;103;4;6;100;75;100;87;90;87,5;100;92;1;90,5;92,375
+"264";18;2;"Saude";"Fisioterapia";7;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";14;0;4;11;100;0;100;87;60;75;66,6666666666667;60;3;71,75;65,4166666666667
+"265";22;2;"Humanas";"Gestão Pública";2;1;"Amarelo";"Nenhum";"nunca";"nao";"sim";"mais que 12 meses";"sim";8;147;9;1;75;25;84;72;60;87,5;66,6666666666667;72;2;64;71,5416666666667
+"266";42;1;"Humanas";"Engenharia de Produção";3;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"mais que 12 meses";"nao";10;203;4;11;80;25;100;67;50;62,5;33,3333333333333;72;3;68;54,4583333333333
+"267";41;2;"Exatas";"Pedagogia";12;1;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";5;623;43;41;35;0;22;57;20;25;0;40;2;28,5;21,25
+"268";32;2;"Saude";"Farmácia";3;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";17,5;40;30;18;25;75;62;62;15;25;100;36;4;56;44
+"269";18;2;"Humanas";"Engenharia Civil";12;2;"Indigena";"Depressão";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";15;75;14;31;80;0;32;62;10;25;0;48;1;43,5;20,75
+"270";33;2;"Tecnologia";"Gastronomia";2;2;"Preto";"Depressão";"ex_tab";"nao";"sim";"mais que 12 meses";"sim";4;25;23;16;100;75;52;55;40;12,5;100;44;2;70,5;49,125
+"271";25;2;"Saude";"Fisioterapia";6;1;"Branco";"Depressão";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";7,5;245;45;39;95;75;52;42;5;25;33,3333333333333;20;5;66;20,8333333333333
+"272";20;2;"Exatas";"Geografia (Licenciatura)";1;2;"Amarelo";"Depressão";"ex_tab";"sim";"sim";"4-6 meses";"sim";4;98;3;15;50;0;52;42;30;25;33,3333333333333;32;3;36;30,0833333333333
+"273";43;1;"Saude";"Medicina Veterinária";7;1;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";10;231;31;26;90;100;62;25;20;37,5;33,3333333333333;20;4;69,25;27,7083333333333
+"274";21;2;"Saude";"Psicologia";8;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;40;11;6;85;100;84;77;60;87,5;100;60;3;86,5;76,875
+"275";46;1;"Saude";"Educação Física (Bacharelado)";12;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"7-9 meses";"sim";4,5;600;1;0;100;25;52;67;70;75;33,3333333333333;88;2;61;66,5833333333333
+"276";30;2;"Exatas";"Pedagogia";9;2;"Branco";"Hipertensão";"ex_tab";"sim";"nao";"0 a 3 meses";"nao";7,5;0;5;8;85;100;84;57;65;75;100;64;4;81,5;76
+"277";40;2;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";2;2;"Preto";"Depressão";"ex_tab";"nao";"sim";"10-12 meses";"nao";4,5;0;41;40;85;0;32;15;5;25;0;4;4;33;8,5
+"278";21;2;"Saude";"Enfermagem";7;1;"Branco";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"nao";9;0;20;12;50;75;62;62;40;50;100;52;4;62,25;60,5
+"279";33;2;"Saude";"Biomendicina";1;1;"Preto";"Nenhum";"nunca";"sim";"nao";"Não aplicável";"nao";8;156;32;25;45;25;22;37;10;25;33,3333333333333;40;4;32,25;27,0833333333333
+"280";41;2;"Exatas";"Administração";12;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"0 a 3 meses";"nao";5;118;18;22;80;0;52;47;5;50;0;24;4;44,75;19,75
+"281";30;2;"Saude";"Educação Física (Bacharelado)";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;100;10;8;95;50;84;72;80;75;66,6666666666667;88;1;75,25;77,4166666666667
+"282";24;2;"Humanas";"Gestão Financeira";1;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";8;0;29;30;90;100;84;62;10;62,5;33,3333333333333;40;3;84;36,4583333333333
+"283";22;2;"Exatas";"Administração";5;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;118;2;6;90;50;72;77;65;75;100;76;2;72,25;79
+"284";32;2;"Exatas";"Comunicação Social - Publicidade e Propaganda";7;1;"Amarelo";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";11;0;9;25;100;100;84;52;60;50;100;56;2;84;66,5
+"285";25;2;"Saude";"Medicina Veterinária";3;1;"Preto";"Nenhum";"nunca";"nao";"sim";"mais que 12 meses";"sim";10,5;118;24;22;70;100;72;57;40;50;66,6666666666667;36;4;74,75;48,1666666666667
+"286";21;2;"Tecnologia";"Análise e desenvolvimento de sistemas";1;2;"Amarelo";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";7,5;15;34;31;75;100;62;20;25;37,5;33,3333333333333;28;3;64,25;30,9583333333333
+"287";31;2;"Exatas";"Serviço Social";5;2;"Amarelo";"Hipertensão";"ex_tab";"nao";"nao";"Não aplicável";"nao";12,5;116;42;46;55;0;10;40;25;12,5;0;28;4;26,25;16,375
+"288";26;2;"Exatas";"Pedagogia";5;2;"Amarelo";"Hipertensão";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";5;300;5;4;85;75;72;82;75;75;100;68;3;78,5;79,5
+"289";41;1;"Humanas";"Engenharia Elétrica";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";8;0;5;5;90;0;62;92;50;50;0;84;3;61;46
+"290";26;2;"Exatas";"Psicologia";1;1;"Amarelo";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;195;18;9;95;100;52;82;50;62,5;66,6666666666667;80;2;82,25;64,7916666666667
+"291";35;2;"Exatas";"História (Licenciatura)";3;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6;25;54;32;50;0;12;47;40;50;33,3333333333333;24;4;27,25;36,8333333333333
+"292";20;2;"Saude";"Nutrição";1;2;"Branco";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";2,5;0;53;41;15;0;52;47;5;25;0;12;2;28,5;10,5
+"293";32;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";7;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"nao";6;0;5;17;70;25;62;62;25;50;0;36;2;54,75;27,75
+"294";23;1;"Exatas";"Educação Física (Bacharelado)";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";4,5;477;6;18;75;0;42;87;30;62,5;33,3333333333333;44;3;51;42,4583333333333
+"295";42;2;"Saude";"Medicina Veterinária";7;1;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"sim";6,5;117;30;28;95;0;42;10;15;25;0;16;5;36,75;14
+"296";22;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";4,5;300;22;21;100;25;100;42;45;25;33,3333333333333;48;5;66,75;37,8333333333333
+"297";18;2;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";1;2;"Preto";"Nenhum";"nunca";"sim";"nao";"Não aplicável";"nao";11,5;0;17;19;65;75;42;52;30;50;100;44;4;58,5;56
+"298";40;2;"Saude";"Medicina";3;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9;60;19;16;70;25;72;32;35;50;33,3333333333333;28;2;49,75;36,5833333333333
+"299";21;1;"Saude";"Farmácia";7;2;"Branco";"Hipertensão";"ex_tab";"nao";"nao";"0 a 3 meses";"nao";4;0;4;6;25;100;72;47;55;25;100;36;4;61;54
+"300";69;2;"Saude";"Psicologia";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"0 a 3 meses";"nao";12;0;16;29;80;50;62;50;45;12,5;33,3333333333333;44;3;60,5;33,7083333333333
+"301";20;1;"Humanas";"Engenharia Mecatrônica";5;2;"Preto";"Depressão";"ex_tab";"nao";"sim";"7-9 meses";"nao";4,5;0;14;26;60;25;22;52;25;50;0;28;4;39,75;25,75
+"302";35;2;"Exatas";"Educação Física (Bacharelado)";2;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"10-12 meses";"sim";12,5;39;9;6;60;0;74;87;50;87,5;66,6666666666667;48;4;55,25;63,0416666666667
+"303";31;1;"Exatas";"Ciências Contábeis";1;1;"Branco";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";4,5;490;0;3;100;100;72;67;80;75;100;76;2;84,75;82,75
+"304";43;2;"Humanas";"Design de Interiores";2;2;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";10;537;19;9;100;75;84;77;50;87,5;66,6666666666667;32;3;84;59,0416666666667
+"305";45;2;"Exatas";"Educação Física (Licenciatura)";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";5;445;29;19;55;0;62;52;30;62,5;0;36;4;42,25;32,125
+"306";19;2;"Exatas";"Direito";9;1;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";10;0;53;22;40;0;62;67;40;25;0;32;4;42,25;24,25
+"307";0;2;"Exatas";"Pedagogia";12;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";6,5;236;25;16;70;0;32;47;45;62,5;0;32;3;37,25;34,875
+"308";30;2;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";10;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4;294;37;24;60;50;62;62;15;25;33,3333333333333;20;3;58,5;23,3333333333333
+"309";32;2;"Tecnologia";"Processos escolares";5;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";5;60;14;13;50;75;52;52;20;50;33,3333333333333;24;3;57,25;31,8333333333333
+"310";35;2;"Saude";"Educação Física (Bacharelado)";3;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";6,5;312;10;23;100;0;72;52;50;50;0;40;1;56;35
+"311";25;2;"Saude";"Medicina";2;1;"Preto";"Depressão";"ex_tab";"nao";"sim";"10-12 meses";"sim";18;120;55;30;50;25;62;47;25;50;0;36;1;46;27,75
+"312";28;2;"Saude";"Psicologia";9;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";17,5;343;16;11;95;25;74;67;20;62,5;0;52;1;65,25;33,625
+"313";22;2;"Saude";"Psicologia";7;1;"Preto";"Depressão";"nunca";"sim";"nao";"Não aplicável";"sim";5,5;240;2;4;70;100;62;57;55;50;66,6666666666667;52;2;72,25;55,9166666666667
+"314";39;1;"Exatas";"Pedagogia";11;2;"Preto";"Depressão";"nunca";"sim";"nao";"Não aplicável";"nao";4,5;195;11;20;95;75;84;87;55;75;66,6666666666667;40;3;85,25;59,1666666666667
+"315";55;2;"Tecnologia";"Gestão de Recursos Humanos";4;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";15;196;39;37;80;75;72;35;25;12,5;33,3333333333333;24;3;65,5;23,7083333333333
+"316";22;2;"Saude";"Medicina Veterinária";3;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";10;0;23;28;90;0;52;47;25;50;0;36;2;47,25;27,75
+"317";37;2;"Saude";"Gestão Hospitalar";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";5;0;4;2;100;50;84;67;65;62,5;66,6666666666667;56;1;75,25;62,5416666666667
+"318";24;2;"Saude";"Medicina Veterinária";7;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";9;0;42;8;90;50;62;67;60;50;33,3333333333333;60;4;67,25;50,8333333333333
+"319";22;1;"Exatas";"Serviço Social";12;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";6;125;1;0;95;100;100;72;75;75;100;92;1;91,75;85,5
+"320";42;2;"Saude";"Enfermagem";6;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";11,5;0;7;5;65;75;72;37;35;75;33,3333333333333;44;3;62,25;46,8333333333333
+"321";21;2;"Exatas";"Pedagogia";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"nao";6,5;40;13;24;75;25;52;22;50;50;66,6666666666667;44;4;43,5;52,6666666666667
+"322";25;2;"Exatas";"Pedagogia";3;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";1,5;117;3;0;100;100;52;62;60;75;100;56;3;78,5;72,75
+"323";39;2;"Saude";"Educação Física (Bacharelado)";2;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";4;540;4;7;100;100;84;77;75;87,5;66,6666666666667;68;1;90,25;74,2916666666667
+"324";0;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"sim";11,5;98;35;42;35;0;22;30;5;12,5;0;8;5;21,75;6,375
+"325";38;2;"Exatas";"Administração";9;2;"Preto";"Depressão";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";8;477;47;20;95;100;62;62;45;25;33,3333333333333;36;2;79,75;34,8333333333333
+"326";39;2;"Exatas";"Psicologia";1;1;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";2;390;0;2;95;100;100;72;55;62,5;100;64;2;91,75;70,375
+"327";47;2;"Saude";"Medicina";1;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";15;0;28;26;85;0;42;57;20;50;0;36;4;46;26,5
+"328";18;2;"Humanas";"Ciências Contábeis";1;2;"Amarelo";"Nenhum";"ex_tab";"nao";"sim";"10-12 meses";"sim";15;0;36;28;35;0;62;32;30;25;0;8;4;32,25;15,75
+"329";24;1;"Saude";"Biomendicina";5;1;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"sim";6,5;30;15;36;70;50;52;57;15;25;33,3333333333333;20;4;57,25;23,3333333333333
+"330";20;2;"Exatas";"Administração";12;2;"Branco";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";20;0;1;1;100;100;62;95;95;100;100;88;3;89,25;95,75
+"331";33;1;"Exatas";"Educação Física (Bacharelado)";12;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";2,5;120;19;2;100;100;52;82;70;75;100;64;1;83,5;77,25
+"332";44;2;"Saude";"Medicina";2;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";10,5;0;1;2;75;100;72;72;70;75;100;84;3;79,75;82,25
+"333";19;2;"Saude";"Psicologia";8;1;"Preto";"Nenhum";"nunca";"nao";"nao";"Não aplicável";"nao";10;0;5;6;100;100;62;57;60;50;100;48;4;79,75;64,5
+"334";23;2;"Humanas";"Pedagogia";5;1;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";9;0;19;15;55;25;52;52;25;62,5;0;24;4;46;27,875
+"335";30;1;"Exatas";"Gestão da Tecnologia da Informação";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"nao";2;75;63;25;20;100;52;52;35;62,5;100;36;2;56;58,375
+"336";19;2;"Saude";"Nutrição";3;1;"Amarelo";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"nao";9;0;28;7;35;0;52;30;60;12,5;66,6666666666667;80;5;29,25;54,7916666666667
+"337";47;2;"Saude";"Odontologia";5;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8;360;39;40;95;100;62;45;20;12,5;33,3333333333333;28;3;75,5;23,4583333333333
+"338";37;2;"Saude";"Ciências Biológicas - Biologia (Bacharelado)";7;2;"Branco";"Diabetes";"ex_tab";"sim";"nao";"Não aplicável";"nao";9;0;12;22;75;100;100;20;55;12,5;100;48;4;73,75;53,875
+"339";42;2;"Exatas";"Pedagogia";2;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";2,5;0;33;8;100;100;62;72;65;62,5;100;52;3;83,5;69,875
+"340";37;2;"Saude";"Educação Física (Licenciatura)";6;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";5,5;390;13;15;100;100;100;52;70;62,5;66,6666666666667;48;3;88;61,7916666666667
+"341";39;2;"Saude";"Educação Física (Bacharelado)";3;1;"Preto";"Nenhum";"nunca";"nao";"sim";"7-9 meses";"nao";16;90;28;28;80;25;100;45;20;12,5;0;20;4;62,5;13,125
+"342";31;2;"Saude";"Medicina Veterinária";9;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"4-6 meses";"nao";9,5;420;16;7;75;75;100;57;70;75;66,6666666666667;88;4;76,75;74,9166666666667
+"343";22;2;"Saude";"Biomendicina";5;1;"Amarelo";"Hipertensão";"ex_tab";"nao";"nao";"Não aplicável";"sim";6;300;56;34;55;0;72;20;25;12,5;0;24;5;36,75;15,375
+"344";35;2;"Humanas";"Gestão de Recursos Humanos";1;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";20;0;32;40;15;0;42;40;20;12,5;0;24;5;24,25;14,125
+"345";29;1;"Humanas";"Engenharia Mecatrônica";5;2;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";7,5;39;8;9;80;100;72;72;50;62,5;100;56;4;81;67,125
+"346";53;2;"Saude";"Medicina Veterinária";3;1;"Preto";"Nenhum";"ex_tab";"nao";"sim";"0 a 3 meses";"sim";19,5;0;16;8;80;100;62;27;55;62,5;66,6666666666667;76;4;67,25;65,0416666666667
+"347";18;2;"Exatas";"Pedagogia";1;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";6,5;73;29;27;40;50;62;77;60;50;0;52;2;57,25;40,5
+"348";33;2;"Exatas";"Psicologia";9;1;"Branco";"Asma brônquica";"ex_tab";"nao";"nao";"Não aplicável";"sim";11;354;41;17;95;100;62;42;30;62,5;33,3333333333333;56;1;74,75;45,4583333333333
+"349";22;2;"Humanas";"Arquitetura e urbanismo";1;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";14;359;27;38;95;0;84;82;10;25;0;24;3;65,25;14,75
+"350";26;1;"Saude";"Ciências Biológicas - Biologia (Licenciatura)";6;1;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"nao";8,5;0;6;26;100;100;84;72;20;25;33,3333333333333;24;3;89;25,5833333333333
+"351";21;2;"Saude";"Psicologia";1;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"nao";14;300;35;27;65;0;52;57;50;62,5;0;36;3;43,5;37,125
+"352";42;1;"Saude";"Medicina";3;1;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";12;356;6;11;100;100;100;82;50;87,5;66,6666666666667;68;3;95,5;68,0416666666667
+"353";27;1;"Exatas";"História (Licenciatura)";2;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";8,5;255;14;17;95;0;72;62;60;25;0;32;3;57,25;29,25
+"354";24;2;"Exatas";"História (Licenciatura)";12;2;"Preto";"Hipertensão";"ex_tab";"sim";"sim";"0 a 3 meses";"nao";4;78;25;14;65;0;52;37;50;25;0;48;4;38,5;30,75
+"355";39;2;"Humanas";"Farmácia";7;1;"Branco";"Asma brônquica";"ex_tab";"sim";"sim";"mais que 12 meses";"sim";2,5;354;34;11;75;75;72;47;15;75;100;48;3;67,25;59,5
+"356";39;2;"Saude";"Educação Física (Bacharelado)";1;1;"Preto";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"sim";2,5;58;9;18;85;0;62;57;40;50;0;84;2;51;43,5
+"357";24;1;"Humanas";"Engenharia Química";11;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";5;245;1;6;100;100;84;100;90;100;100;100;3;96;97,5
+"358";27;2;"Saude";"Educação Física (Bacharelado)";12;2;"Indigena";"Hipertensão";"ex_tab";"sim";"nao";"Não aplicável";"sim";5;472;12;14;100;0;52;62;40;62,5;0;48;3;53,5;37,625
+"359";59;2;"Saude";"Medicina Veterinária";3;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";6;0;28;15;90;100;100;52;15;50;66,6666666666667;52;3;85,5;45,9166666666667
+"360";19;2;"Exatas";"Pedagogia";1;2;"Branco";"Nenhum";"ex_tab";"sim";"sim";"mais que 12 meses";"nao";4,5;30;39;34;40;0;42;45;15;12,5;0;24;3;31,75;12,875
+"361";36;2;"Saude";"Psicologia";5;1;"Preto";"Nenhum";"ex_tab";"sim";"sim";"7-9 meses";"sim";4;120;27;21;90;0;62;47;30;25;0;28;5;49,75;20,75
+"362";61;2;"Exatas";"Pedagogia";12;2;"Preto";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";12;0;38;15;75;75;52;20;60;37,5;66,6666666666667;68;4;55,5;58,0416666666667
+"363";23;2;"Humanas";"Engenharia Civil";4;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";9;343;12;22;35;0;32;57;30;62,5;0;36;3;31;32,125
+"364";39;2;"Saude";"Educação Física (Bacharelado)";7;2;"Preto";"Nenhum";"ex_tab";"sim";"sim";"0 a 3 meses";"sim";7;165;1;3;100;100;84;62;75;62,5;33,3333333333333;68;4;86,5;59,7083333333333
+"365";38;2;"Exatas";"Serviço Social";1;2;"Branco";"Hipertensão";"nunca";"nao";"sim";"4-6 meses";"nao";8,5;0;45;18;70;100;42;47;30;25;100;28;4;64,75;45,75
+"366";42;2;"Humanas";"Administração";12;2;"Amarelo";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";7;180;17;18;80;100;84;57;40;62,5;33,3333333333333;44;4;80,25;44,9583333333333
+"367";31;2;"Tecnologia";"Gestão de Recursos Humanos";1;2;"Amarelo";"Nenhum";"ex_tab";"sim";"sim";"4-6 meses";"nao";6;130;35;22;45;0;62;5;10;0;33,3333333333333;20;1;28;15,8333333333333
+"368";24;1;"Humanas";"Engenharia Civil";7;2;"Branco";"Nenhum";"ex_tab";"sim";"nao";"Não aplicável";"sim";3,5;40;7;20;50;100;62;57;50;62,5;100;40;3;67,25;63,125
+"369";37;1;"Humanas";"Administração";1;1;"Preto";"Nenhum";"ex_tab";"nao";"nao";"Não aplicável";"sim";4;353;9;12;100;50;72;77;30;50;66,6666666666667;68;3;74,75;53,6666666666667
+"370";21;2;"Tecnologia";"Análise e desenvolvimento de sistemas";1;1;"Indigena";"Depressão";"ex_tab";"sim";"nao";"Não aplicável";"nao";7,5;0;55;38;65;0;52;10;15;12,5;0;24;2;31,75;12,875
+"371";23;2;"Saude";"Medicina Veterinária";1;1;"Preto";"Hipertensão";"ex_tab";"sim";"nao";"0 a 3 meses";"sim";9,5;354;15;14;100;75;84;82;70;62,5;66,6666666666667;56;3;85,25;63,7916666666667
