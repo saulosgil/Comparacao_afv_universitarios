@@ -78,7 +78,7 @@ df_ajustado <-
     ansiedade = ansiedade_soma,
     depressao = soma_depressao
   ) |>
-  bind_cols(sf36) |># juntanto com as colunas do SF36
+  bind_cols(sf36) |> # juntanto com as colunas do SF36
   mutate(
     area_conhecimento = case_when(area_conhecimento == 1 ~ "Saude",
                                   area_conhecimento == 2 | area_conhecimento == 4 ~ "Exatas",
@@ -98,11 +98,15 @@ df_ajustado <-
     realiza_treinamento = case_when(realiza_treinamento == 1 ~ "sim",
                                     realiza_treinamento == 2 ~ "nao"),
     teve_covid = case_when(teve_covid == 1 ~ "sim",
-                           teve_covid == 2 ~ "nao")
-)
+                           teve_covid == 2 ~ "nao"),
+    z_score_mvpa = (mvpa-mean(mvpa))/sd(mvpa),
+    z_score_comportamento_sedentario = (comportamento_sedentario - mean(comportamento_sedentario))/sd(comportamento_sedentario),
+    z_score_sf36_fisico = (sf36_fisico = (sf36_fisico - mean(sf36_fisico))/sd(sf36_fisico)),
+    z_score_sf36_mental = (sf36_mental = (sf36_mental - mean(sf36_mental))/sd(sf36_mental))
+  )
+
 
 # Escrevendo base ajustada --------------------------------------------------------------------
 
 write.csv2(x = df_ajustado,file = "data/df_ajustado.csv")
-
 
