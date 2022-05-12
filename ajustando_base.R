@@ -102,8 +102,16 @@ df_ajustado <-
     z_score_mvpa = (mvpa-mean(mvpa))/sd(mvpa),
     z_score_comportamento_sedentario = (comportamento_sedentario - mean(comportamento_sedentario))/sd(comportamento_sedentario),
     z_score_sf36_fisico = (sf36_fisico = (sf36_fisico - mean(sf36_fisico))/sd(sf36_fisico)),
-    z_score_sf36_mental = (sf36_mental = (sf36_mental - mean(sf36_mental))/sd(sf36_mental))
-  )
+    z_score_sf36_mental = (sf36_mental = (sf36_mental - mean(sf36_mental))/sd(sf36_mental)),
+    e_outlier_mvpa = case_when(z_score_mvpa > 2 ~ "É outlier",
+                               TRUE ~  "Não é outlier"),
+    e_outlier_comportamento_sedentario = case_when(z_score_comportamento_sedentario > 2 ~ "É outlier",
+                                                   TRUE ~  "Não é outlier"),
+    e_outlier_sf36_fisico = case_when(z_score_sf36_fisico > 2 ~ "É outlier",
+                                      TRUE ~  "Não é outlier"),
+    e_outlier_sf36_mental = case_when(z_score_sf36_mental > 2 ~ "É outlier",
+                                      TRUE ~  "Não é outlier")
+)
 
 
 # Escrevendo base ajustada --------------------------------------------------------------------
