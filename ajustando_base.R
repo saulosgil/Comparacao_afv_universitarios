@@ -99,6 +99,8 @@ df_ajustado <-
                                     realiza_treinamento == 2 ~ "nao"),
     teve_covid = case_when(teve_covid == 1 ~ "sim",
                            teve_covid == 2 ~ "nao"),
+    mvpa_ativo = case_when(mvpa > 150 ~ "Ativo",
+                           TRUE ~ "Inativo"),
     z_score_mvpa = (mvpa-mean(mvpa))/sd(mvpa),
     z_score_comportamento_sedentario = (comportamento_sedentario - mean(comportamento_sedentario))/sd(comportamento_sedentario),
     z_score_sf36_fisico = (sf36_fisico = (sf36_fisico - mean(sf36_fisico))/sd(sf36_fisico)),
@@ -117,4 +119,5 @@ df_ajustado <-
 # Escrevendo base ajustada --------------------------------------------------------------------
 
 write.csv2(x = df_ajustado,file = "data/df_ajustado.csv")
+
 

@@ -5,7 +5,7 @@ library(patchwork)
 
 # Lendo a base --------------------------------------------------------------------------------
 
-read.csv2(file = "data/df_ajustado.csv")
+df_ajustado <- read.csv2(file = "data/df_ajustado.csv")
 
 
 # Verificando outliers ------------------------------------------------------------------------
@@ -56,6 +56,8 @@ grafico <- function(x , y){
   ggplot(mapping = aes(x = x,
                        y = y,
                        color = x)) +
+    xlab(label = "") +
+    ylab(label = "") +
     ggdist::stat_halfeye(
       ## custom bandwidth
       adjust = .5,
@@ -173,6 +175,15 @@ g5+g9
 g6+g10
 g7+g11
 g8+g12
+
+
+
+
+
+
+
+
+
 
 
 
