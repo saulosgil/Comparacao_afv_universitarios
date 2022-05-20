@@ -1,13 +1,37 @@
+---
+title: "Atividade física e comportamento sedentário entre universitários: uma comparação entre area de conhecimento"
+author: "Saulo Gil"
+date: "20/05/2022"
+output: html_document
+---
+
+# Carregando pacotes
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r include=FALSE}
 # Carregando pacotes --------------------------------------------------------------------------
 
 library(tidyverse)
 library(patchwork)
 
+```
+
+# Lendo a base
+
+```{r}
 # Lendo a base --------------------------------------------------------------------------------
 
 df_ajustado <- read.csv2(file = "data/df_ajustado.csv")
 
+```
 
+# Verificando outliers
+
+```{r echo=FALSE, out.width="100%" }
 # Verificando outliers ------------------------------------------------------------------------
 
 # Função para marcar oulier
@@ -44,11 +68,6 @@ g3 <- grafico_outlier(df_ajustado$sf36_fisico,
 g4 <- grafico_outlier(df_ajustado$sf36_mental,
                 df_ajustado$e_outlier_sf36_mental) +
   labs(title = "SF-36 - Dominio Mental")
-
-# Layout
-
-g1+g2+g3+g4
-
 
 # Função para fazer grafico exploratório ---------------------------------------------------------
 
@@ -118,11 +137,6 @@ g8 <- grafico(df_ajustado$area_conhecimento,
               df_ajustado$sf36_mental) +
   labs(title = "SF-36 - Dominio Mental com outlier")
 
-
-# Layout
-
-g5+g6+g7+g8
-
 # Graficos sem os outliers
 
 # Tirando os outliers
@@ -165,10 +179,6 @@ g12 <- grafico(df_sem_outlier$area_conhecimento,
   labs(title = "SF-36 - Dominio Mental sem outlier")
 
 
-# Layout
-
-g9+g10+g11+g12
-
 # Verificando o impacto do outlier em cada variável
 
 g5+g9
@@ -176,6 +186,13 @@ g6+g10
 g7+g11
 g8+g12
 
+```
+
+MINHA INTERPRETAÇÃO SOBRE OS OUTLIERS É DE QUE ELES NÃO INFLUENCIAM A DISTRIBUIÇÃO DOS DADOS POIS COMO PODEMOS OBSERVAR, MESMO TIRANDO OS OUTLIERS (Z-SCORE > 2) A DISTRIBUIÇÃO NÃO É DRASTICAMENTE AFETADA. POR CONTA DISSO, TODOS OS TESTES ABAIXO FORAM REALIZADOS COM TODA A AMOSTRA. 
+
+# VERIFICANDO A PREVALENCIA DE INATIVIDADE FÍSICA - MVPA < 150 MIN/SEM
+
+```{r, out.width="100%"}
 # Prevalencia de inatividade física (<150 min/sem) --------------------------------------------
 
 df_ajustado |>
@@ -186,6 +203,64 @@ df_ajustado |>
   xlab("") +
   theme_bw() +
   theme(legend.position = "bottom")
+
+```
+
+PODEMOS OBSERVAR QUE INDEPENDENTE DA AREA, HÁ UMA ELEVADA PREVALENCIA DE INATIVIDADE FÍSICA EM UNIVERSITÁRIOS 
+
+# ANALISE DE VARIANCIA COM POSTHOC DE TUKEY
+### Sempre que a ANOVA pegar diferença, irei plotar o gráfico abaixo para facilitar a visualização.
+
+## MVPA X AREA DE CONHECIMENTO
+
+```{r}
+mvpa_area <- aov(df_ajustado$mvpa ~ df_ajustado$area_conhecimento, data = df_ajustado)
+
+summary(mvpa_area)
+
+TukeyHSD(mvpa_area)
+
+```
+
+## COMPORTAMENTO SEDENTARIO X AREA DE CONHECIMENTO
+
+```{r}
+cs_area <- aov(df_ajustado$comportamento_sedentario ~ df_ajustado$area_conhecimento, data = df_ajustado)
+
+summary(cs_area)
+
+TukeyHSD(cs_area)
+
+g6
+
+```
+
+## QUALIDADE DE VIDA - DOMINIO FÍSICO X AREA DE CONHECIMENTO
+
+```{r}
+sf36fisico_area <- aov(df_ajustado$sf36_fisico ~ df_ajustado$area_conhecimento, data = df_ajustado)
+
+summary(sf36fisico_area)
+
+TukeyHSD(sf36fisico_area)
+
+g7
+
+```
+
+
+## QUALIDADE DE VIDA - DOMINIO MENTAL X AREA DE CONHECIMENTO
+
+```{r}
+sf36mental_area <- aov(df_ajustado$sf36_mental ~ df_ajustado$area_conhecimento, data = df_ajustado)
+
+summary(sf36mental_area)
+
+TukeyHSD(sf36mental_area)
+
+g8
+
+```
 
 
 
