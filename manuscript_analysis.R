@@ -6,16 +6,13 @@ library(patchwork)
 # Reading dataset --------------------------------------------------------------------------------
 
 df <-
-  read_delim("data/df_ajustado.csv",
-             delim = ";",
-             escape_double = FALSE,
-             locale = locale(encoding = "ISO-8859-1"),
-             trim_ws = TRUE)
+  df_ajustado <- read_csv("data/df_ajustado.csv")
 
 # Adjusting dataset ---------------------------------------------------------------------------
 
 df <-
   df |>
+  # adjusting areas
   mutate(area = case_when(
     curso == "Análise e desenvolvimento de sistemas" ~ "Natural and Applied Sciences",
     curso == "Serviço Social" ~ "Social Sciences",
@@ -68,18 +65,51 @@ df <-
     curso == "Processos escolares" ~ "Social Sciences",
     curso == "Pedagogia" ~ "Humanities",
     curso == "Marketing" ~ "Humanities"
-  ))
-
+  ),
+  # calculate sedentary behavior by day
+  sed_day = comportamento_sedentario / 7,
+  # sedentary class
+  sed_class = case_when(
+    sed_day < 6 ~ "< 6 h/wk",
+    sed_day >= 6 ~ "> 6 h/wk"
+  ),
+  ansiedade_class = case_when(
+    ansiedade < 8 ~ "minimo",
+    ansiedade >= 8 & ansiedade < 16 ~ "leve",
+    ansiedade >= 16 & ansiedade < 26 ~ "moderado",
+    ansiedade >= 26 ~ "Grave"
+  ),
+  depressao_class = case_when(
+    depressao < 12 ~ "minimo",
+    depressao >= 12 & ansiedade < 20 ~ "leve",
+    depressao >= 20 & ansiedade < 36 ~ "moderado",
+    depressao >= 36 ~ "Grave"
+  ),
+  dominio_fisico_class = case_when(
+    sf36_fisico < 50 ~ "poor_QoL_fisico",
+    sf36_fisico >= 50 ~ "good_QoL_fisico"
+  ),
+  dominio_mental_class = case_when(
+    sf36_mental < 50 ~ "poor_QoL_mental",
+    sf36_mental >= 50 ~ "good_QoL_mental"
+  )
+  )
 
 # PLOTS FOR PAPER -----------------------------------------------------------------------------
 # MVPA ----------------------------------------------------------------------------------------
-# Prevalence of physical inactivity
+# Prevalence of physical inactivity among areas
 df |>
   select(area,
          mvpa_ativo) |>
   group_by(area, mvpa_ativo) |>
   summarise(n = n())
 
+# Total prevalence of physical inactivity
+df |>
+  group_by(mvpa_ativo) |>
+  summarise(n = n())
+
+# plot - Prevalence
 prevalence_inactivity <-
   tibble::tribble(
     ~area, ~prevalencia,
@@ -96,6 +126,7 @@ prevalence_plt <-
                        alpha = 0.7)) +
   geom_col(colour = "black",
            show.legend = FALSE) +
+  scale_y_continuous(limits = c(0,70)) +
   # Customizations
   theme(
     # axis.ticks = element_blank(),
@@ -146,7 +177,7 @@ plt_mvpa <-
 # Add labels and title
   labs(
     x = "",
-    y = "Moderate to vigorous physical activity (min/wk)"
+    y = "MVPA (min/wk)"
     ) +
   # Customizations
   theme(
@@ -163,37 +194,96 @@ plt_mvpa <-
     legend.position = "top",
     axis.text = element_text(family = "arial",
                              size = 10,
-                             colour = "black")
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
   )
 
 # PLOT!!!!
 plt_mvpa
 
-# Sedentary behavior --------------------------------------------------------------------------
-# Prevalence of elevate sedentary behavior
+# Anxiety ----------------------------------------------------------------------------------------
+# Prevalence of anxiety among areas
+df |>
+  select(area,
+         ansiedade_class) |>
+  group_by(area, ansiedade_class) |>
+  summarise(n = n())
 
+# Total prevalence of physical inactivity
+df |>
+  group_by(mvpa_ativo) |>
+  summarise(n = n())
 
+# plot - Prevalence
+prevalence_ansiedade_grave <-
+  tibble::tribble(
+    ~area, ~prevalencia,
+    "Humanities", 26,
+    "Natural and Applied Sciences",  32,
+    "Social Sciences", 35
+  )
+
+prevalence_ansiedade_grave_plt <-
+  prevalence_ansiedade_grave |>
+  ggplot(mapping = aes(x = area,
+                       y = prevalencia,
+                       fill = area,
+                       alpha = 0.7)) +
+  geom_col(colour = "black",
+           show.legend = FALSE) +
+  scale_y_continuous(limits = c(0,70)) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  ) +
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Prevalence of severe symptoms of anxiety (%)"
+  ) +
+  coord_flip()
+
+# PLOT!!!!
+prevalence_ansiedade_grave_plt
+
+# Anxiety as continuos variable
 # Basic plot
-plt_sed <-
+plt_anxiety <-
   df |>
   ggplot(mapping = aes(x = area,
-                       y = comportamento_sedentario,
+                       y = ansiedade,
                        color = area)) +
   stat_boxplot(varwidth = FALSE,
                outlier.shape = NA,
-               show.legend = TRUE) +
+               show.legend = FALSE) +
   geom_jitter(width = 0.2,
               size = 1.5,
-              show.legend = TRUE) +
+              alpha = 0.7,
+              show.legend = FALSE) +
   stat_summary(
     fun = "mean",
     shape = 3,
     size = 1,
     colour = "red") +
+  # Customizing
   # Add labels and title
   labs(
     x = "",
-    y = "Sedentary behavior (min/wk)"
+    y = "Beck Anxiety Inventory (a.u)"
   ) +
   # Customizations
   theme(
@@ -210,14 +300,333 @@ plt_sed <-
     legend.position = "top",
     axis.text = element_text(family = "arial",
                              size = 10,
-                             colour = "black")
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
   )
 
+# PLOT!!!!
+plt_anxiety
+
+# Depression ----------------------------------------------------------------------------------------
+# Prevalence of Depression among areas
+df |>
+  select(area,
+         depressao_class) |>
+  drop_na(depressao_class) |>
+  group_by(area, depressao_class) |>
+  summarise(n = n())
+
+# Total prevalence of physical inactivity
+df |>
+  group_by(mvpa_ativo) |>
+  summarise(n = n())
+
+# plot - Prevalence
+prevalence_depression_grave <-
+  tibble::tribble(
+    ~area, ~prevalencia,
+    "Humanities", 3,
+    "Natural and Applied Sciences",  5,
+    "Social Sciences", 6
+  )
+
+prevalence_depression_grave_plt <-
+  prevalence_depression_grave |>
+  ggplot(mapping = aes(x = area,
+                       y = prevalencia,
+                       fill = area,
+                       alpha = 0.7)) +
+  geom_col(colour = "black",
+           show.legend = FALSE) +
+  scale_y_continuous(limits = c(0,70)) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  ) +
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Prevalence of  severe symptoms of depression (%)"
+  ) +
+  coord_flip()
+
+# PLOT!!!!
+prevalence_depression_grave_plt
+
+# Depression as continuos variable
+# Basic plot
+plt_depression <-
+  df |>
+  ggplot(mapping = aes(x = area,
+                       y = ansiedade,
+                       color = area)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = FALSE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = FALSE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Beck Depression Inventory (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_depression
+
+# Figure 1. Physical activity levels, anxiety and depression scores in different acade --------
+(prevalence_plt / prevalence_ansiedade_grave_plt / prevalence_depression_grave_plt) |
+  (plt_mvpa / plt_anxiety / plt_depression)
+
+# SF36 fisico ----------------------------------------------------------------------------------------
+# Prevalence of poor QoL fisico among areas
+df |>
+  select(area,
+         dominio_fisico_class) |>
+  drop_na(dominio_fisico_class) |>
+  group_by(area, dominio_fisico_class) |>
+  summarise(n = n())
 
 
 
+# plot - Prevalence
+prevalence_poor_fisico_grave <-
+  tibble::tribble(
+    ~area, ~prevalencia,
+    "Humanities", 35,
+    "Natural and Applied Sciences",  24,
+    "Social Sciences", 40
+  )
+
+prevalence_poor_fisico_grave_plt <-
+  prevalence_poor_fisico_grave |>
+  ggplot(mapping = aes(x = area,
+                       y = prevalencia,
+                       fill = area,
+                       alpha = 0.7)) +
+  geom_col(colour = "black",
+           show.legend = FALSE) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  ) +
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Prevalence of poor quality of life - physical domain (%)"
+  ) +
+  coord_flip()
+
+# PLOT!!!!
+prevalence_poor_fisico_grave_plt
+
+# SF36 fisico as continuos variable
+# Basic plot
+plt_fisico <-
+  df |>
+  ggplot(mapping = aes(x = area,
+                       y = sf36_fisico,
+                       color = area)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = TRUE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = TRUE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Quality of life - Physical domain (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_fisico
+
+# SF36 mental ----------------------------------------------------------------------------------------
+# Prevalence of poor QoL mental among areas
+df |>
+  select(area,
+         dominio_mental_class) |>
+  drop_na(dominio_mental_class) |>
+  group_by(area, dominio_mental_class) |>
+  summarise(n = n())
 
 
 
+# plot - Prevalence
+prevalence_poor_mental_grave <-
+  tibble::tribble(
+    ~area, ~prevalencia,
+    "Humanities", 59,
+    "Natural and Applied Sciences",  52,
+    "Social Sciences", 57
+  )
 
+prevalence_poor_mental_grave_plt <-
+  prevalence_poor_mental_grave |>
+  ggplot(mapping = aes(x = area,
+                       y = prevalencia,
+                       fill = area,
+                       alpha = 0.7)) +
+  geom_col(colour = "black",
+           show.legend = FALSE) +
+  scale_y_continuous(limits = c(0,70))  +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.major.x = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  ) +
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Prevalence of poor quality of life - mental domain (%)"
+  ) +
+  coord_flip()
+
+# PLOT!!!!
+prevalence_poor_mental_grave_plt
+
+# SF36 fisico as continuos variable
+# Basic plot
+plt_mental <-
+  df |>
+  ggplot(mapping = aes(x = area,
+                       y = sf36_mental,
+                       color = area)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = FALSE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = FALSE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Quality of life - Mental domain (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_mental
+
+# Figure 2. Quality of life scores in different academic areas. -------------------------------
+(prevalence_poor_fisico_grave_plt / prevalence_poor_mental_grave_plt) |
+  (plt_fisico / plt_mental)
 

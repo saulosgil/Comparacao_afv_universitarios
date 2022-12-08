@@ -58,6 +58,7 @@ df_ajustado <-
     ha_quantos_meses_voce_teve_covid_19,
     fez_exercicios_fisicos_sistematizados_nos_ultimos_6_meses_isso_inclui_programas_de_musculacao_natacao_danca_ou_qualquer_outro_tipo_de_atividades_feitos_como_parte_da_sua_rotina,
     comportamento_sedentario,
+    media_semana_caminhada_leve,
     mvpa_semanal,
     ansiedade_soma,
     soma_depressao
@@ -74,6 +75,7 @@ df_ajustado <-
     teve_covid = voce_teve_covid_19,
     quando_teve_covid = ha_quantos_meses_voce_teve_covid_19,
     realiza_treinamento = fez_exercicios_fisicos_sistematizados_nos_ultimos_6_meses_isso_inclui_programas_de_musculacao_natacao_danca_ou_qualquer_outro_tipo_de_atividades_feitos_como_parte_da_sua_rotina,
+    atv_leve = media_semana_caminhada_leve,
     mvpa = mvpa_semanal,
     ansiedade = ansiedade_soma,
     depressao = soma_depressao
@@ -119,6 +121,6 @@ df_ajustado <-
 
 # Escrevendo base ajustada --------------------------------------------------------------------
 
-write.csv2(x = df_ajustado,file = "data/df_ajustado.csv")
+write.csv(x = df_ajustado,file = "data/df_ajustado.csv")
 
 
