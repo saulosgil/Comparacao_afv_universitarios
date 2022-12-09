@@ -97,6 +97,331 @@ df <-
   )
 
 # PLOTS FOR PAPER -----------------------------------------------------------------------------
+# Comparing active x inactive  ----------------------------------------------------------------
+# radar plot - active vs inactive -------------------------------------------------------------
+# Adjusting dataset to radar plot
+df_ajustada <-
+  df |> select( # Selecting parameters
+    mvpa_ativo,
+    capacidade_funcional,
+    aspecto_fisico,
+    dor,
+    estado_geral_saude,
+    vitalidade,
+    aspectos_sociais,
+    aspectos_emocionais,
+    saude_mental
+  ) |>
+  rename( # Rename !!! It is important to be similar to minimal and maximal radar plor!!!
+    "Function capacity" = capacidade_funcional,
+    "Physical Appearance" = aspecto_fisico,
+    Pain = dor,
+    "General health status" = estado_geral_saude,
+    Vitality = vitalidade,
+    "Social Aspect" = aspectos_sociais,
+    "Emotional Aspect" = aspectos_emocionais,
+    "Mental health" = saude_mental
+  )
+
+# Sumarizing parameters of SF36
+sf36_score <-
+  df_ajustada |>
+  group_by(mvpa_ativo) |>
+  summarise("Function capacity" = mean(`Function capacity`),
+            "Physical Appearance" = mean(`Physical Appearance`),
+            Pain = mean(Pain),
+            "General health status" = mean(`General health status`),
+            Vitality =  mean(Vitality),
+            "Social Aspect" = mean(`Social Aspect`),
+            "Emotional Aspect" = mean(`Emotional Aspect`),
+            "Mental health" = mean(`Mental health`)
+  ) |>
+  select(-mvpa_ativo) |>
+  as.data.frame()
+
+row.names(sf36_score) <- c("Active", "Inactive") # inserindo o nome das linhas
+
+sf36_score
+
+# Definindo a amplitude do escore: Minimo e máximo
+max_min <- tibble(
+  "Function capacity" = c(100, 0),
+  "Physical Appearance" = c(100, 0),
+  Pain = c(100, 0),
+  "General health status" = c(100, 0),
+  Vitality = c(100, 0),
+  "Social Aspect" = c(100, 0),
+  "Emotional Aspect" = c(100, 0),
+  "Mental health" = c(100, 0)
+) |>
+  as.data.frame()
+
+row.names(max_min) <- c("Max", "Min") # inserindo o nome das linhas
+
+max_min
+
+# Juntando as variaveis sumarizadas com os escores minimo e máximo
+df_radar <- rbind(max_min, sf36_score)
+
+df_radar
+
+# Plot the data for student 1
+# Reduce plot margin using par()
+op <- par(mar = c(2, 2, 2, 2))
+
+radarchart(df_radar,
+           axistype = 1, # Cutomizando as labels
+           caxislabels = c(0, 25, 50, 75, 100),
+           vlabels = colnames(df_radar),
+           axislabcol = "grey",
+           vlcex = 1,
+           pcol = c("#F8766D", "#619CFF"), # Customizando o poligono
+           # pfcol = scales::alpha(c("#F8766D", "#00BA38", "#619CFF"), 0.1),
+           plwd = 3,
+           plty = 2,
+           cglcol = "grey", # Customizando a grid
+           cglwd = 0.8,
+           cglty = 1,
+           title = "QUALITY OF LIFE - Short-Form Health Survey (SF-36)"
+)
+
+# Add an horizontal legend
+legend(
+  x = 1.3,
+  y = 1.2,
+  legend = rownames(df_radar[-c(1,2),]),
+  horiz = FALSE,
+  bty = "n",
+  pch = 20,
+  col = c("#F8766D", "#619CFF"),
+  text.col = "black",
+  cex = 1,
+  pt.cex = 1.5
+)
+par(op)
+
+# Comparing sf36 parameters - t-test
+
+t.test(aspecto_fisico ~ mvpa_ativo, df_ajustado) # physical appeareance
+t.test(capacidade_funcional ~ mvpa_ativo, df_ajustado) # function capacity
+t.test(saude_mental ~ mvpa_ativo, df_ajustado) # mental health
+t.test(aspectos_emocionais ~ mvpa_ativo, df_ajustado) # Emotional aspect
+t.test(aspectos_sociais ~ mvpa_ativo, df_ajustado) # Social Aspect
+t.test(vitalidade ~ mvpa_ativo, df_ajustado) # Vitality
+t.test(estado_geral_saude ~ mvpa_ativo, df_ajustado) # General health status
+t.test(dor ~ mvpa_ativo, df_ajustado) # Pain
+
+
+
+# sf36 fisico ----------------------------------------------------------------------------------------
+# Basic plot
+plt_fisico_active <-
+  df |>
+  ggplot(mapping = aes(x = mvpa_ativo,
+                       y = sf36_fisico,
+                       color = mvpa_ativo)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = TRUE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = TRUE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Quality of life - Physical domain (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_fisico_active
+
+# Comparing active vs inactive - t-test
+t.test(sf36_fisico ~ mvpa_ativo, df_ajustado)
+
+# sf36 mental ----------------------------------------------------------------------------------------
+# Basic plot
+plt_mental_active <-
+  df |>
+  ggplot(mapping = aes(x = mvpa_ativo,
+                       y = sf36_mental,
+                       color = mvpa_ativo)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = TRUE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = TRUE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Quality of life - Mental domain (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+
+# PLOT!!!!
+plt_mental_active
+
+# Comparing active vs inactive - t-test
+t.test(sf36_mental ~ mvpa_ativo, df_ajustado)
+
+# Depression ----------------------------------------------------------------------------------------
+# Basic plot
+plt_depressao_active <-
+  df |>
+  ggplot(mapping = aes(x = mvpa_ativo,
+                       y = depressao,
+                       color = mvpa_ativo)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = TRUE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = TRUE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Beck Depression Inventory (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_depressao_active
+
+# Comparing active vs inactive - t-test
+t.test(depressao ~ mvpa_ativo, df_ajustado)
+
+# Ansiedade ----------------------------------------------------------------------------------------
+# Basic plot
+plt_anxiety_active <-
+  df |>
+  ggplot(mapping = aes(x = mvpa_ativo,
+                       y = ansiedade,
+                       color = mvpa_ativo)) +
+  stat_boxplot(varwidth = FALSE,
+               outlier.shape = NA,
+               show.legend = TRUE) +
+  geom_jitter(width = 0.2,
+              size = 1.5,
+              alpha = 0.7,
+              show.legend = TRUE) +
+  stat_summary(
+    fun = "mean",
+    shape = 3,
+    size = 1,
+    colour = "red") +
+  # Customizing
+  # Add labels and title
+  labs(
+    x = "",
+    y = "Beck Anxiety Inventory (a.u)"
+  ) +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black"),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+# PLOT!!!!
+plt_anxiety_active
+
+# Comparing active vs inactive - t-test
+t.test(ansiedade ~ mvpa_ativo, df_ajustado)
+
+# Figure 1. Quality of life scores betwen active and inactive. -------------------------------
+(plt_fisico_active / plt_depressao_active) |
+  (plt_mental_active / plt_depressao_active)
+
 # MVPA ----------------------------------------------------------------------------------------
 # Prevalence of physical inactivity among areas
 df |>
