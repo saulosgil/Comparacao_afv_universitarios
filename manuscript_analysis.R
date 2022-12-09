@@ -2,6 +2,7 @@
 # Packages ------------------------------------------------------------------------------------
 library(tidyverse)
 library(patchwork)
+library(fmsb)
 
 # Reading dataset --------------------------------------------------------------------------------
 
@@ -629,4 +630,108 @@ plt_mental
 # Figure 2. Quality of life scores in different academic areas. -------------------------------
 (prevalence_poor_fisico_grave_plt / prevalence_poor_mental_grave_plt) |
   (plt_fisico / plt_mental)
+
+# Radar plot - SF36 -----------------------------------------------------------------------------
+# Adjusting dataset to radar plot
+df_ajustada <-
+  df |> select( # Selecting parameters
+    area,
+    capacidade_funcional,
+    aspecto_fisico,
+    dor,
+    estado_geral_saude,
+    vitalidade,
+    aspectos_sociais,
+    aspectos_emocionais,
+    saude_mental
+  ) |>
+  rename( # Rename !!! It is important to be similar to minimal and maximal radar plor!!!
+    "Function capacity" = capacidade_funcional,
+    "Physical Appearance" = aspecto_fisico,
+    Pain = dor,
+    "General health status" = estado_geral_saude,
+    Vitality = vitalidade,
+    "Social Aspect" = aspectos_sociais,
+    "Emotional Aspect" = aspectos_emocionais,
+    "Mental health" = saude_mental
+  )
+
+# Sumarizing parameters of SF36
+sf36_score <-
+  df_ajustada |>
+  group_by(area) |>
+  summarise("Function capacity" = mean(`Function capacity`),
+            "Physical Appearance" = mean(`Physical Appearance`),
+            Pain = mean(Pain),
+            "General health status" = mean(`General health status`),
+            Vitality =  mean(Vitality),
+            "Social Aspect" = mean(`Social Aspect`),
+            "Emotional Aspect" = mean(`Emotional Aspect`),
+            "Mental health" = mean(`Mental health`)
+  ) |>
+  select(-area) |>
+  as.data.frame()
+
+row.names(sf36_score) <- c("Humanities", "Social Sciences", "Natural and Applied Sciences") # inserindo o nome das linhas
+
+sf36_score
+
+# Definindo a amplitude do escore: Minimo e máximo
+max_min <- tibble(
+  "Function capacity" = c(100, 0),
+  "Physical Appearance" = c(100, 0),
+  Pain = c(100, 0),
+  "General health status" = c(100, 0),
+  Vitality = c(100, 0),
+  "Social Aspect" = c(100, 0),
+  "Emotional Aspect" = c(100, 0),
+  "Mental health" = c(100, 0)
+) |>
+  as.data.frame()
+
+row.names(max_min) <- c("Max", "Min") # inserindo o nome das linhas
+
+max_min
+
+# Juntando as variaveis sumarizadas com os escores minimo e máximo
+df_radar <- rbind(max_min, sf36_score)
+
+df_radar
+
+# Plot the data for student 1
+# Reduce plot margin using par()
+op <- par(mar = c(2, 2, 2, 2))
+
+radarchart(df_radar,
+           axistype = 1, # Cutomizando as labels
+           caxislabels = c(0, 25, 50, 75, 100),
+           vlabels = colnames(df_radar),
+           axislabcol = "grey",
+           vlcex = 1,
+           pcol = c("#F8766D", "#00BA38", "#619CFF"), # Customizando o poligono
+           # pfcol = scales::alpha(c("#F8766D", "#00BA38", "#619CFF"), 0.1),
+           plwd = 3,
+           plty = 2,
+           cglcol = "grey", # Customizando a grid
+           cglwd = 0.8,
+           cglty = 1,
+           title = "QUALITY OF LIFE - Short-Form Health Survey (SF-36)"
+)
+
+# Add an horizontal legend
+legend(
+  x = 1.3,
+  y = 1.2,
+  legend = rownames(df_radar[-c(1,2),]),
+  horiz = FALSE,
+  bty = "n",
+  pch = 20,
+  col = c("#F8766D", "#00BA38", "#619CFF"),
+  text.col = "black",
+  cex = 1,
+  pt.cex = 1.5
+)
+par(op)
+
+
 
