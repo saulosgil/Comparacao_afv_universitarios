@@ -416,7 +416,7 @@ plt_depression <-
 # PLOT!!!!
 plt_depression
 
-# Figure 1. Physical activity levels, anxiety and depression scores in different acade --------
+# Figure 3. Physical activity levels, anxiety and depression scores in different acade --------
 (prevalence_plt / prevalence_ansiedade_grave_plt / prevalence_depression_grave_plt) |
   (plt_mvpa / plt_anxiety / plt_depression)
 
@@ -627,7 +627,7 @@ plt_mental <-
 # PLOT!!!!
 plt_mental
 
-# Figure 2. Quality of life scores in different academic areas. -------------------------------
+# Figure 4. Quality of life scores in different academic areas. -------------------------------
 (prevalence_poor_fisico_grave_plt / prevalence_poor_mental_grave_plt) |
   (plt_fisico / plt_mental)
 
