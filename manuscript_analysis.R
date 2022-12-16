@@ -74,25 +74,33 @@ df <-
     sed_day < 6 ~ "< 6 h/wk",
     sed_day >= 6 ~ "> 6 h/wk"
   ),
+  #anxiety class
   ansiedade_class = case_when(
     ansiedade < 8 ~ "minimo",
     ansiedade >= 8 & ansiedade < 16 ~ "leve",
     ansiedade >= 16 & ansiedade < 26 ~ "moderado",
     ansiedade >= 26 ~ "Grave"
   ),
+  # depression class
   depressao_class = case_when(
     depressao < 12 ~ "minimo",
     depressao >= 12 & ansiedade < 20 ~ "leve",
     depressao >= 20 & ansiedade < 36 ~ "moderado",
     depressao >= 36 ~ "Grave"
   ),
+  # poor QoL physical domain
   dominio_fisico_class = case_when(
     sf36_fisico < 50 ~ "poor_QoL_fisico",
     sf36_fisico >= 50 ~ "good_QoL_fisico"
   ),
+  # poor QoL mental domain
   dominio_mental_class = case_when(
     sf36_mental < 50 ~ "poor_QoL_mental",
     sf36_mental >= 50 ~ "good_QoL_mental"
+  ),
+  mvpa_ativo = case_when(
+    mvpa_ativo == "Ativo" ~ "Active",
+    mvpa_ativo == "Inativo" ~ "Inactive"
   )
   )
 
@@ -210,8 +218,10 @@ t.test(aspectos_sociais ~ mvpa_ativo, df_ajustado) # Social Aspect
 t.test(vitalidade ~ mvpa_ativo, df_ajustado) # Vitality
 t.test(estado_geral_saude ~ mvpa_ativo, df_ajustado) # General health status
 t.test(dor ~ mvpa_ativo, df_ajustado) # Pain
-
-
+t.test(sf36_fisico ~ mvpa_ativo, df_ajustado) # physical domain
+t.test(sf36_mental ~ mvpa_ativo, df_ajustado) # mental domain
+t.test(ansiedade ~ mvpa_ativo, df_ajustado) # anxiety domain
+t.test(depressao ~ mvpa_ativo, df_ajustado) # depression domain
 
 # sf36 fisico ----------------------------------------------------------------------------------------
 # Basic plot
@@ -420,7 +430,7 @@ t.test(ansiedade ~ mvpa_ativo, df_ajustado)
 
 # Figure 1. Quality of life scores betwen active and inactive. -------------------------------
 (plt_fisico_active / plt_depressao_active) |
-  (plt_mental_active / plt_depressao_active)
+  (plt_mental_active / plt_anxiety_active)
 
 # MVPA ----------------------------------------------------------------------------------------
 # Prevalence of physical inactivity among areas
