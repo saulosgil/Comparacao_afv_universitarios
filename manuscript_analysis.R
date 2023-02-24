@@ -1068,5 +1068,53 @@ legend(
 )
 par(op)
 
+# relative frequency of courses ---------------------------------------------------------------
+#
+exatas <-
+  df |>
+  filter(area_conhecimento == "Exatas") |>
+  group_by(curso) |>
+  summarise(cnt = n()) |>
+  mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
+  arrange(desc(freq))
 
+sum(exatas$freq)
 
+#
+humanas <-
+  df_ajustado |>
+  filter(area_conhecimento == "Humanas") |>
+  group_by(curso) |>
+  summarise(cnt = n()) |>
+  mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
+  arrange(desc(freq))
+
+sum(humanas$freq)
+
+#
+saude <-
+  df_ajustado |>
+  filter(area_conhecimento == "Saude") |>
+  group_by(curso) |>
+  summarise(cnt = n()) |>
+  mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
+  arrange(desc(freq))
+
+sum(saude$freq)
+
+# plots
+
+exatas |>
+  ggplot(mapping = aes(x = curso, y = freq)) +
+  geom_col() +
+  coord_flip()
+
+humanas |>
+  ggplot(mapping = aes(x = curso, y = freq)) +
+  geom_col() +
+  coord_flip()
+
+saude |>
+  ggplot(mapping = aes(x = curso, y = freq)) +
+  geom_col() +
+  coord_flip()
