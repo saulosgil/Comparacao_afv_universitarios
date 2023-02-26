@@ -6,8 +6,7 @@ library(fmsb)
 
 # Reading dataset --------------------------------------------------------------------------------
 
-df <-
-  df_ajustado <- read_csv("data/df_ajustado.csv")
+df <- read_csv("data/df_ajustado.csv")
 
 # Adjusting dataset ---------------------------------------------------------------------------
 
@@ -103,6 +102,62 @@ df <-
     mvpa_ativo == "Inativo" ~ "Inactive"
   )
   )
+# adjusting curso - change for english
+df <-
+  df |>
+  mutate(curso = case_when(
+    curso == "Análise e desenvolvimento de sistemas" ~ "Analysis and systems development",
+    curso == "Serviço Social" ~ "Social Service",
+    curso == "Engenharia Elétrica" ~ "Electrical engineering",
+    curso == "Arquitetura e urbanismo" ~ "Architecture and urbanism",
+    curso == "Gestão Financeira" ~ "Financial management",
+    curso == "Engenharia da Computação" ~ "Computer engineering",
+    curso == "Medicina Veterinária" ~ "Veterinary medicine",
+    curso == "História (Licenciatura)" ~ "History",
+    curso == "Fisioterapia" ~ "Physiotherapy",
+    curso == "Psicologia" ~ "Psychology",
+    curso == "Direito" ~ "Bachelor of Laws",
+    curso == "Gestão Comercial" ~ "Commercial management",
+    curso == "Nutrição" ~ "Nutrition",
+    curso == "Pedagogia (2ª graduação)" ~ "Pedagogy",
+    curso == "Gestão Hospitalar" ~ "Hospital management",
+    curso == "Educação Física (Bacharelado)" ~ "Physical education",
+    curso == "Administração" ~ "Administration",
+    curso == "Enfermagem" ~ "Nursing",
+    curso == "Engenharia de Produção" ~ "Production engineering",
+    curso == "Ciências Contábeis" ~ "Accounting Sciences",
+    curso == "Logística" ~ "Logistics",
+    curso == "Ciências Biológicas - Biologia (Bacharelado)" ~ "Biological sciences",
+    curso == "Processos gerenciais" ~ "Management processes",
+    curso == "Geografia (Licenciatura)" ~ "Geography",
+    curso == "Odontologia" ~ "Dentistry",
+    curso == "Engenharia Ambiental" ~ "Environmental engineering",
+    curso == "Engenharia Civil" ~ "Civil engineering",
+    curso == "Letras (Licenciatura)" ~ "Literature",
+    curso == "Serviços jurídicos, cartoriais e notariais" ~ "Juridic services",
+    curso == "Farmácia" ~ "Pharmacy",
+    curso == "Medicina" ~ "Medicine",
+    curso == "Gestão de Recursos Humanos" ~ "Human resource Management",
+    curso == "Gestão da Tecnologia da Informação" ~ "Information Technology Management",
+    curso == "Educação Física (Licenciatura)" ~ "Physical education",
+    curso == "Estética e Cosmética" ~ "Aesthetics and Cosmetics",
+    curso == "Engenharia Mecânica" ~ "Mechanical engineering",
+    curso == "Engenharia Química" ~ "Chemical engineering",
+    curso == "Gastronomia" ~ "Gastronomy",
+    curso == "Ciências Biológicas - Biologia (Licenciatura)" ~ "Biological sciences",
+    curso == "Biomendicina" ~ "Biomedicine",
+    curso == "Teologia (Bacharelado)" ~ "Theology",
+    curso == "Comunicação Social - Publicidade e Propaganda" ~ "Social Communication",
+    curso == "Segurança da Informação" ~ "Information security",
+    curso == "Design de Interiores" ~ "Interior design",
+    curso == "Marketing Digital" ~ "Digital marketing ",
+    curso == "Gestão da Qualidade" ~ "Quality management",
+    curso == "Gestão Pública" ~ "Public Management",
+    curso == "Engenharia Mecatrônica" ~ "Mechatronics Engineering",
+    curso == "Processos escolares" ~ "School processes",
+    curso == "Pedagogia" ~ "Pedagogy",
+    curso == "Marketing" ~ "Marketing"
+  ))
 
 # PLOTS FOR PAPER -----------------------------------------------------------------------------
 # Comparing active x inactive  ----------------------------------------------------------------
@@ -1068,53 +1123,122 @@ legend(
 )
 par(op)
 
-# relative frequency of courses ---------------------------------------------------------------
+# Relative frequency of courses ---------------------------------------------------------------
 #
-exatas <-
+social_sciences <-
   df |>
-  filter(area_conhecimento == "Exatas") |>
+  filter(area == "Social Sciences") |>
   group_by(curso) |>
   summarise(cnt = n()) |>
   mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
   arrange(desc(freq))
-
-sum(exatas$freq)
 
 #
-humanas <-
-  df_ajustado |>
-  filter(area_conhecimento == "Humanas") |>
+humanities <-
+  df |>
+  filter(area == "Humanities") |>
   group_by(curso) |>
   summarise(cnt = n()) |>
   mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
   arrange(desc(freq))
-
-sum(humanas$freq)
 
 #
-saude <-
-  df_ajustado |>
-  filter(area_conhecimento == "Saude") |>
+nat_appl <-
+  df |>
+  filter(area == "Natural and Applied Sciences") |>
   group_by(curso) |>
   summarise(cnt = n()) |>
   mutate(freq = round(cnt / sum(cnt) * 100,digits =  1)) |>
   arrange(desc(freq))
-
-sum(saude$freq)
 
 # plots
-
-exatas |>
+# Social Sciences
+ss <-
+  social_sciences |>
   ggplot(mapping = aes(x = curso, y = freq)) +
-  geom_col() +
-  coord_flip()
+  geom_col(aes(fct_reorder(curso, freq), freq),
+           colour = "black",
+           fill = "#619CFF") +
+  coord_flip() +
+  labs(title = "Social Sciences") +
+  ylab(label = "relative frequency (%)") +
+  xlab(label = " ") +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  )
 
-humanas |>
+# Humanitites
+h <-
+  humanities |>
   ggplot(mapping = aes(x = curso, y = freq)) +
-  geom_col() +
-  coord_flip()
+  geom_col(aes(fct_reorder(curso, freq), freq),
+           colour = "black",
+           fill = "#00BA38") +
+  coord_flip()+
+  labs(title = "Humanities") +
+  ylab(label = "relative frequency (%)") +
+  xlab(label = " ") +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  )
 
-saude |>
+# Natural and Applied Sciences
+nat_app <-
+  nat_appl |>
   ggplot(mapping = aes(x = curso, y = freq)) +
-  geom_col() +
-  coord_flip()
+  geom_col(aes(fct_reorder(curso, freq), freq),
+           colour = "black",
+           fill = "#F8766D") +
+  coord_flip()+
+  labs(title = "Natural and\nApplied Sciences") +
+  ylab(label = "relative frequency (%)") +
+  xlab(label = " ") +
+  # Customizations
+  theme(
+    # axis.ticks = element_blank(),
+    axis.line = element_line(colour = "black"),
+    panel.grid = element_line(color = "#b4aea9"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(linetype = "dashed"),
+    panel.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    plot.background = element_rect(fill = "#ffffff", color = "#ffffff"),
+    # legend
+    legend.title = element_blank(),
+    legend.position = "top",
+    axis.text = element_text(family = "arial",
+                             size = 10,
+                             colour = "black")
+  )
+
+# Patchwork
+ss+h+nat_app
+
